@@ -38,6 +38,11 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "source-code",
+    title: "Source Code",
+    link: "http://www.github.com/Technical-Shubham-tech/3d-portfolio/",
+  },
 ];
 
 const services = [

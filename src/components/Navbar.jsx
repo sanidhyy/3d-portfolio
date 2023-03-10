@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -35,9 +35,15 @@ const Navbar = () => {
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => !link?.link && setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link?.link ? (
+                <a href={link.link} target="_blank" rel="noreferrer noopener">
+                  {link.title}
+                </a>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -63,11 +69,21 @@ const Navbar = () => {
                     active === link.title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
+                    !link?.link && setToggle(!toggle);
+                    !link?.link && setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link?.link ? (
+                    <a
+                      href={link.link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
