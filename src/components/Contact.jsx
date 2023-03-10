@@ -84,7 +84,7 @@ const Contact = () => {
     emailjs
       .send(
         import.meta.env.VITE_API_SERVICE_ID,
-        import.meta.env.production.VITE_API_TEMPLATE_ID,
+        import.meta.env.VITE_API_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Shubham",
