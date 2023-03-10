@@ -1,3 +1,4 @@
+// Text Variant motion
 export const textVariant = (delay) => {
   return {
     hidden: {
@@ -16,6 +17,7 @@ export const textVariant = (delay) => {
   };
 };
 
+// FadeIn motion
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {
@@ -37,6 +39,7 @@ export const fadeIn = (direction, type, delay, duration) => {
   };
 };
 
+// zoom in motion
 export const zoomIn = (delay, duration) => {
   return {
     hidden: {
@@ -56,6 +59,7 @@ export const zoomIn = (delay, duration) => {
   };
 };
 
+// slide in motion
 export const slideIn = (direction, type, delay, duration) => {
   return {
     hidden: {
@@ -75,6 +79,7 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
+// staggered container motion
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
     hidden: {},

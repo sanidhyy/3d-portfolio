@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// Project Card
 const ProjectCard = ({
   index,
   name,
@@ -27,6 +28,7 @@ const ProjectCard = ({
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative w-full h-[230px]">
+        {/* Work image */}
         <img
           src={image}
           alt={name}
@@ -64,11 +66,13 @@ const ProjectCard = ({
         </div>
       </div>
 
+      {/* Work Info */}
       <div className="mt-5">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
 
+      {/* Work Tag */}
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
           <p key={index + tag.name} className={`text-[14px] ${tag.color}`}>
@@ -80,14 +84,17 @@ const ProjectCard = ({
   </motion.div>
 );
 
+// Works
 const Works = () => {
   return (
     <>
+      {/* Title */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
+      {/* About */}
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
@@ -101,6 +108,7 @@ const Works = () => {
         </motion.p>
       </div>
 
+      {/* Project Card */}
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, i) => (
           <>

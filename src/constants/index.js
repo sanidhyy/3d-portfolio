@@ -1,3 +1,6 @@
+// Contains constant data for using in website
+// ! Don't remove anything from here if not sure
+
 import {
   mobile,
   backend,
@@ -28,6 +31,7 @@ import {
   project6,
 } from "../assets";
 
+// Navbar Links
 export const navLinks = [
   {
     id: "about",
@@ -48,6 +52,7 @@ export const navLinks = [
   },
 ];
 
+// Services
 const services = [
   {
     title: "Web Developer",
@@ -67,6 +72,7 @@ const services = [
   },
 ];
 
+// Technologies
 const technologies = [
   {
     name: "HTML 5",
@@ -122,6 +128,7 @@ const technologies = [
   },
 ];
 
+// Experiences
 const experiences = [
   {
     title: "React.js Developer",
@@ -177,6 +184,7 @@ const experiences = [
   },
 ];
 
+// Testimonials
 const testimonials = [
   {
     testimonial:
@@ -204,6 +212,7 @@ const testimonials = [
   },
 ];
 
+// Projects
 const projects = [
   {
     name: "Disney+ Clone",

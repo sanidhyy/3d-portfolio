@@ -1,3 +1,6 @@
+// Export new images here
+// Don't remove anything from here if not sure
+
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";

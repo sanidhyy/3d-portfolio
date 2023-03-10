@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -12,6 +12,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+// Experience Card
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
@@ -28,6 +29,7 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }
   >
+    {/* Title */}
     <div>
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
       <p
@@ -38,6 +40,7 @@ const ExperienceCard = ({ experience }) => (
       </p>
     </div>
 
+    {/* Experience Points */}
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, i) => (
         <li
@@ -51,14 +54,17 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
+// Experience
 const Experience = () => {
   return (
     <>
+      {/* Title */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
 
+      {/* Experience Card */}
       <div className="empty-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, i) => (

@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// Contact
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,19 +17,25 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  // handle form change
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
   };
 
+  // validate form on submit
   const validateForm = () => {
+    // form fields
     const { name, email, message } = form;
+
+    // Error message
     const nameError = document.querySelector("#name-error");
     const emailError = document.querySelector("#email-error");
     const messageError = document.querySelector("#message-error");
     let current = { name: false, email: false, message: false };
 
+    // validate name
     if (name.trim().length < 3) {
       nameError.classList.remove("hidden");
       current["name"] = false;
@@ -40,6 +47,7 @@ const Contact = () => {
     const email_regex =
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    // valiate email
     if (!email.trim().toLowerCase().match(email_regex)) {
       emailError.classList.remove("hidden");
       current["email"] = false;
@@ -48,6 +56,7 @@ const Contact = () => {
       current["email"] = true;
     }
 
+    // validate message
     if (message.trim().length < 5) {
       messageError.classList.remove("hidden");
       current["message"] = false;
@@ -56,16 +65,22 @@ const Contact = () => {
       current["message"] = true;
     }
 
+    // True if all fields are validated
     return Object.keys(current).every((k) => current[k]);
   };
 
+  // handle form submit
   const handleSubmit = (e) => {
+    // prevent default page reload
     e.preventDefault();
 
+    // validate form
     if (!validateForm()) return false;
 
+    // show loader
     setLoading(true);
 
+    // send email
     emailjs
       .send(
         import.meta.env.VITE_API_SERVICE_ID,
@@ -81,6 +96,7 @@ const Contact = () => {
       )
       .then(
         () => {
+          // Success
           setLoading(false);
           alert("Thank You. I will get back to you as soon as possible.");
 
@@ -91,6 +107,7 @@ const Contact = () => {
           });
         },
         (error) => {
+          // Error handle
           setLoading(false);
           console.log(error);
           alert("Sorry. Something went wrong.");
@@ -110,9 +127,11 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
+        {/* Title */}
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        {/* Form */}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -186,6 +205,7 @@ const Contact = () => {
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             disabled={loading}
           >
+            {/* check loader state */}
             {loading ? "Sending..." : "Send"}
           </button>
         </form>

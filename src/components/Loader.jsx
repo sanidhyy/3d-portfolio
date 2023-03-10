@@ -1,12 +1,14 @@
 import React from "react";
 import { Html, useProgress } from "@react-three/drei";
 
+// Loader while canvas (model) is loading
 const Loader = () => {
-  const { progress } = useProgress();
+  const { progress } = useProgress(); // use drei progress
 
   return (
     <Html>
       <span className="canvas-load">
+        {/* Show percentage */}
         <p
           style={{
             fontSize: 14,
