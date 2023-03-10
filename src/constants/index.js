@@ -19,10 +19,13 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
 } from "../assets";
 
 export const navLinks = [
@@ -203,60 +206,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Disney+ Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    live_site_link: "https://google.com",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    live_site_link: "https://google.com",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -264,9 +223,121 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    live_site_link: "https://google.com",
+    image: project1,
+    source_code_link: "https://github.com/Technical-Shubham-tech/disney-clone",
+    live_site_link: "https://clonedisneyplus.web.app/",
+  },
+  {
+    name: "Golds Gym",
+    description:
+      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rapidapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project2,
+    source_code_link: "https://github.com/Technical-Shubham-tech/fitness-app",
+    live_site_link: "https://fitness-gym-react.netlify.app/",
+  },
+  {
+    name: "Shoppy",
+    description:
+      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link:
+      "https://github.com/Technical-Shubham-tech/admin-dashboard",
+    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
+  },
+  {
+    name: "TikTok Clone",
+    description:
+      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project4,
+    source_code_link: "https://github.com/Technical-Shubham-tech/tiktok-clone",
+    live_site_link: "https://tiktok-clone-react.vercel.app/",
+  },
+  {
+    name: "Cryptoverse",
+    description:
+      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rapidapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project5,
+    source_code_link: "https://github.com/Technical-Shubham-tech/crypto-app",
+    live_site_link: "https://reactjscryptoapp.netlify.app/",
+  },
+  {
+    name: "Travel Advisor",
+    description:
+      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rapidapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project6,
+    source_code_link:
+      "https://github.com/Technical-Shubham-tech/travel-advisor",
+    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
   },
 ];
 
