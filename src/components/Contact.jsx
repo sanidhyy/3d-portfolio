@@ -21,8 +21,49 @@ const Contact = () => {
 
     setForm({ ...form, [name]: value });
   };
+
+  const validateForm = () => {
+    const { name, email, message } = form;
+    const nameError = document.querySelector("#name-error");
+    const emailError = document.querySelector("#email-error");
+    const messageError = document.querySelector("#message-error");
+    let current = { name: false, email: false, message: false };
+
+    if (name.trim().length < 3) {
+      nameError.classList.remove("hidden");
+      current["name"] = false;
+    } else {
+      nameError.classList.add("hidden");
+      current["name"] = true;
+    }
+
+    const email_regex =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!email.trim().toLowerCase().match(email_regex)) {
+      emailError.classList.remove("hidden");
+      current["email"] = false;
+    } else {
+      emailError.classList.add("hidden");
+      current["email"] = true;
+    }
+
+    if (message.trim().length < 5) {
+      messageError.classList.remove("hidden");
+      current["message"] = false;
+    } else {
+      messageError.classList.add("hidden");
+      current["message"] = true;
+    }
+
+    return Object.keys(current).every((k) => current[k]);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) return false;
+
     setLoading(true);
 
     emailjs
@@ -32,7 +73,7 @@ const Contact = () => {
         {
           from_name: form.name,
           to_name: "Shubham",
-          from_email: form.email,
+          from_email: form.email.trim().toLowerCase(),
           to_email: import.meta.env.VITE_API_EMAILJS_RECIEVER,
           message: form.message,
         },
@@ -79,7 +120,7 @@ const Contact = () => {
         >
           {/* Name */}
           <label htmlFor="name" className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">Your Name*</span>
             <input
               type="text"
               name="name"
@@ -90,11 +131,16 @@ const Contact = () => {
               title="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
+
+            {/* Invalid Name */}
+            <span className="text-red-400 mt-2 hidden" id="name-error">
+              Please enter a valid name!
+            </span>
           </label>
 
           {/* Email */}
           <label htmlFor="email" className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">Your Email*</span>
             <input
               type="email"
               name="email"
@@ -105,11 +151,16 @@ const Contact = () => {
               title="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
+
+            {/* Invalid Email */}
+            <span className="text-red-400 mt-2 hidden" id="email-error">
+              Please enter a valid email!
+            </span>
           </label>
 
           {/* Message */}
           <label htmlFor="message" className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">Your Message*</span>
             <textarea
               rows={7}
               type="text"
@@ -121,6 +172,11 @@ const Contact = () => {
               title="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
+
+            {/* Invalid Message */}
+            <span className="text-red-400 mt-2 hidden" id="message-error">
+              Please enter a valid message!
+            </span>
           </label>
 
           {/* Submit */}
