@@ -31,7 +31,7 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 
 7. From dashboard Choose Email Services > Add New Service and connect your mail to emailjs.
 
-**NOTE:** Make Sure you type same email in `VITE_APP_EMAILJS_RECIEVER` in `.env` 
+**NOTE:** Make Sure you type same email in `VITE_APP_EMAILJS_RECIEVER` in `.env`
 
 8. Once, New service is configured, copy your **service id** to `VITE_APP_SERVICE_ID`
 
@@ -39,7 +39,7 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 
 10. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `VITE_APP_EMAILJS_KEY`
 
-![Copy public key](step_emailjs.png "Copy public key")
+![Copy public key](/.github/images/step_emailjs.png "Copy public key")
 
 11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn run dev`. The app is created using vite.
 
