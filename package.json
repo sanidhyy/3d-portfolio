@@ -2,6 +2,21 @@
   "name": "3d-portfolio",
   "private": true,
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "Sanidhya Kr. Verma",
+  "description": "React JS Modern 3D Portfolio using Three.js",
+  "keywords": [
+    "reactjs",
+    "react",
+    "porfolio-app",
+    "three-js",
+    "modern-ui/ux",
+    "js",
+    "javascript",
+    "html",
+    "css",
+    "tailwindcss"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
