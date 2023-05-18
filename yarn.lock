@@ -1082,10 +1082,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-maath@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/maath/-/maath-0.5.2.tgz#b1adc883360e45eff3041a2bce45f8cdc0cd6d43"
-  integrity sha512-MFjfnXF5CzZaVnBuKc9y1FJh/BiPGqf19NH8Jm4o/jKTxuQ3RyPkcSIpuwdDhXrWROVKAxi3KjmHFUNMuIndbg==
+maath@^0.5.2, maath@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/maath/-/maath-0.5.3.tgz#777a1f9b8463c6ffb199ea43406874a357c0cd58"
+  integrity sha512-ut63A4zTd9abtpi+sOHW1fPWPtAFrjK0E17eAthx1k93W/T2cWLKV5oaswyotJVDvvW1EXSdokAqhK5KOu0Qdw==
 
 magic-string@^0.27.0:
   version "0.27.0"
