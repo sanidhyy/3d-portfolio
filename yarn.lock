@@ -198,7 +198,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.19.0"
 
-"@babel/runtime@^7.11.2", "@babel/runtime@^7.16.7", "@babel/runtime@^7.17.8":
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.17.8":
   version "7.21.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
   integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
@@ -451,6 +451,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@mediapipe/tasks-vision@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@mediapipe/tasks-vision/-/tasks-vision-0.10.1.tgz#68047459352019cc141dc9c1d15c05b8ab689423"
+  integrity sha512-/zIKjOAIABx+KVfqe8hA6X2pxBGsBYlEtvD7/gpXecvzKefo/JQO6XaggmJul7+noaqiPYM0CVGZxmFJ2oTdSQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -518,16 +523,17 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.57.1":
-  version "9.57.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.57.1.tgz#459d8a8a1578bf08385d5be3500b090b0c14e4e4"
-  integrity sha512-6Vy8PkEKpUXtlS8FvOj3rOZ5k4QurpQulLehgh3HEtUE7SKfhBBTfnSA0dxPZ9eQP5g6gNcgJvZj5oLIuw8GiQ==
+"@react-three/drei@^9.74.0":
+  version "9.74.0"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.74.0.tgz#251f78342013719255b4c02cc84862045666eab7"
+  integrity sha512-sRXnGo1QqiqD3bZ71lldtzmzBvWIk2MkCuhAdR8NNKEhYlKToyf/eaUmI6N1+KtKcRgmtVZ919tl/gwzmomWFg==
   dependencies:
     "@babel/runtime" "^7.11.2"
+    "@mediapipe/tasks-vision" "^0.10.0"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
-    camera-controls "^2.1.0"
-    detect-gpu "^5.0.10"
+    camera-controls "^2.3.1"
+    detect-gpu "^5.0.14"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
     lodash.omit "^4.5.0"
@@ -539,7 +545,7 @@
     stats.js "^0.17.0"
     suspend-react "^0.0.8"
     three-mesh-bvh "^0.5.23"
-    three-stdlib "^2.21.8"
+    three-stdlib "^2.23.5"
     troika-three-text "^0.47.1"
     utility-types "^3.10.0"
     zustand "^3.5.13"
@@ -562,6 +568,11 @@
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.6.2.tgz#bbe75f8c59e0b7077584920ce2cc76f8f354934d"
   integrity sha512-LzqpSrMK/3JBAVBI9u3NWtOhWNw5AMQfrUFYB0+bDHTSw17z++WJLsPsxAuK+oSddsxk4d7F/JcdDPM1M5YAhA==
+
+"@types/draco3d@^1.4.0":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@types/draco3d/-/draco3d-1.4.2.tgz#7faccb809db2a5e19b9efb97c5f2eb9d64d527ea"
+  integrity sha512-goh23EGr6CLV6aKPwN1p8kBD/7tT5V/bLpToSbarKrwVejqNrspVrv8DhliteYkkhZYrlq/fwKZRRUzH4XN88w==
 
 "@types/offscreencanvas@^2019.6.4":
   version "2019.7.0"
@@ -608,6 +619,11 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/webxr@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.2.tgz#5d9627b0ffe223aa3b166de7112ac8a9460dc54f"
+  integrity sha512-szL74BnIcok9m7QwYtVmQ+EdIKwbjPANudfuvDrAF8Cljg9MKUlIoc1w5tjj9PMpeSH3U1Xnx//czQybJ0EfSw==
+
 "@use-gesture/core@10.2.24":
   version "10.2.24"
   resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.24.tgz#88d13a60954ba62463c774acb92d12bf7b3d810c"
@@ -629,11 +645,6 @@
     "@babel/plugin-transform-react-jsx-self" "^7.21.0"
     "@babel/plugin-transform-react-jsx-source" "^7.19.6"
     react-refresh "^0.14.0"
-
-"@webgpu/glslang@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@webgpu/glslang/-/glslang-0.0.15.tgz#f5ccaf6015241e6175f4b90906b053f88483d1f2"
-  integrity sha512-niT+Prh3Aff8Uf1MVBVUsaNjFj9rJAKDXuoHIKiQbB+6IUP/3J3JIhBNyZ7lDhytvXxw6ppgnwKZdDJ08UMj4Q==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -719,10 +730,10 @@ camelcase-css@^2.0.1:
   resolved "https://registry.yarnpkg.com/camelcase-css/-/camelcase-css-2.0.1.tgz#ee978f6947914cc30c6b44741b6ed1df7f043fd5"
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
-camera-controls@^2.1.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.3.1.tgz#8e8e241fb874ae38b6fa1d22ba445a2e7b3b94ea"
-  integrity sha512-mGPDOqCTSUqaeX3yR3bWQ/p1M5CR8C+cnqndBxQugfGKysn1dhRtw8Q6sG1hq4GL8RPsGwRanwQk5zwQjyrxyQ==
+camera-controls@^2.3.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.4.1.tgz#2859a1379f0668bd1f31c6097cca8cf654471d0f"
+  integrity sha512-tTSyxwUmVDduoGNQMfzDSMQr1A+iQMDGdc89aJWWZdowtNEw8jux8h4uJQLrLfVntWM+DdPBXGAsMAoZaYBDmA==
 
 caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.30001464:
   version "1.0.30001489"
@@ -819,10 +830,10 @@ debug@^4.1.0:
   dependencies:
     ms "2.1.2"
 
-detect-gpu@^5.0.10:
-  version "5.0.14"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.14.tgz#69cbb2941e35f5abf938df02a9e165cb7a17822d"
-  integrity sha512-CZwpdrG3hX4oYBcRATw8YaRV2I3AFIN2X6PA0rf9IQ0uYzi7w4gGQkmzazO9UtApHAYRraUICupnIQ+G3o0JDQ==
+detect-gpu@^5.0.14:
+  version "5.0.27"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.27.tgz#821d9331c87e32568c483d85e12a9adee43d7bb2"
+  integrity sha512-IDjjqTkS+f0xm/ntbD21IPYiF0srzpePC/hhUMmctEsoklZwJwStJiMi/KN0pnH0LjSsgjwbP+QwW7y+Qf4/SQ==
   dependencies:
     webgl-constants "^1.1.1"
 
@@ -1567,14 +1578,14 @@ three-mesh-bvh@^0.5.23:
   resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.23.tgz#08e5b629144b48b11acbd433519680e457d398ed"
   integrity sha512-nyk+MskdyDgECqkxdv57UjazqqhrMi+Al9PxJN6yFtx1CTW4r0eCQ27FtyYKY5gCIWhxjtNfWYDPVy8lzx6LkA==
 
-three-stdlib@^2.21.8:
-  version "2.21.8"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.21.8.tgz#37b11b7f62d07b10742c212153b14db21433b3c6"
-  integrity sha512-kqisiKvO4mSy59v5vWqBQSH8famLxp7Z51LxpMJI9GwDxqODaW02rhIwmjYDEzZWNFpjZpoDHVGbdpeHf8h3SA==
+three-stdlib@^2.23.5:
+  version "2.23.8"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.23.8.tgz#65898ec82bb451c04f69f4905fade42aede0e0d1"
+  integrity sha512-dsgh7cyz/zMY6E+b4XsMRuLuY1tD81pgR+VtsRsXaqMKCHdMSjtXOerG5zSwMfjWMd9gbVMHvuhTc5atsG6F/w==
   dependencies:
-    "@babel/runtime" "^7.16.7"
+    "@types/draco3d" "^1.4.0"
     "@types/offscreencanvas" "^2019.6.4"
-    "@webgpu/glslang" "^0.0.15"
+    "@types/webxr" "^0.5.2"
     chevrotain "^10.1.2"
     draco3d "^1.4.1"
     fflate "^0.6.9"
