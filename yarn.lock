@@ -550,10 +550,10 @@
     utility-types "^3.10.0"
     zustand "^3.5.13"
 
-"@react-three/fiber@^8.13.0":
-  version "8.13.0"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.13.0.tgz#c9eabe60f2276a66d7ce9a3b927083894f4202f9"
-  integrity sha512-hPFzFNgikEMyEbL+NpSA7q+UWZxInrrkJldWaCR2w34Fwf20x9p68bsyN0/yn9oM2VlWoJcJjR8hw1tN9AxHuA==
+"@react-three/fiber@^8.13.2":
+  version "8.13.2"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.13.2.tgz#9f5d4ae9d6742de159f997497fd1575e3aea8790"
+  integrity sha512-3HWq1HSrm3wrlL63Pd0ePOjZ0o9SEjChiKwGENmTmBsIIgPcuX8GX1RbiSUuteCJbAkoRfIcUbBOSqhxGPdVVA==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -561,7 +561,7 @@
     react-reconciler "^0.27.0"
     react-use-measure "^2.1.1"
     scheduler "^0.21.0"
-    suspend-react "^0.0.8"
+    suspend-react "^0.1.0"
     zustand "^3.7.1"
 
 "@remix-run/router@1.6.2":
@@ -1534,6 +1534,11 @@ suspend-react@^0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/suspend-react/-/suspend-react-0.0.8.tgz#b0740c1386b4eb652f17affe4339915ee268bd31"
   integrity sha512-ZC3r8Hu1y0dIThzsGw0RLZplnX9yXwfItcvaIzJc2VQVi8TGyGDlu92syMB5ulybfvGLHAI5Ghzlk23UBPF8xg==
+
+suspend-react@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/suspend-react/-/suspend-react-0.1.0.tgz#570595f315a68d50625387dcca8f502f32f499d8"
+  integrity sha512-J+dYBrK1myX+EpijscT4op5M4C7gMf+k1D38dLz4JivXzVX5T1HqRdAdrMalYVcnf4UWI6GfTMH1uoU3jGLu1g==
 
 tailwindcss@^3.3.2:
   version "3.3.2"

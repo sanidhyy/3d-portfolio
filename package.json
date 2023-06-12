@@ -26,7 +26,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.74.0",
-    "@react-three/fiber": "^8.13.0",
+    "@react-three/fiber": "^8.13.2",
     "framer-motion": "^10.12.16",
     "maath": "^0.6.0",
     "react": "^18.2.0",
