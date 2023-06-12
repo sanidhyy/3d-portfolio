@@ -523,10 +523,10 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.74.0":
-  version "9.74.0"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.74.0.tgz#251f78342013719255b4c02cc84862045666eab7"
-  integrity sha512-sRXnGo1QqiqD3bZ71lldtzmzBvWIk2MkCuhAdR8NNKEhYlKToyf/eaUmI6N1+KtKcRgmtVZ919tl/gwzmomWFg==
+"@react-three/drei@^9.74.12":
+  version "9.74.12"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.74.12.tgz#3c480e6fd3c9b5e433790fa6fec3a34c349a375a"
+  integrity sha512-NDSpRgqEgx6lRabZ09XIrlw6zf7eVCl33AJPkvPNTg67KEkln1Z7Hb+pWoNbMXxuqLXcbJGwd3e9X0C/mhaWyg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "^0.10.0"
@@ -543,7 +543,7 @@
     react-composer "^5.0.3"
     react-merge-refs "^1.1.0"
     stats.js "^0.17.0"
-    suspend-react "^0.0.8"
+    suspend-react "^0.1.0"
     three-mesh-bvh "^0.5.23"
     three-stdlib "^2.23.5"
     troika-three-text "^0.47.1"
@@ -1534,6 +1534,11 @@ suspend-react@^0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/suspend-react/-/suspend-react-0.0.8.tgz#b0740c1386b4eb652f17affe4339915ee268bd31"
   integrity sha512-ZC3r8Hu1y0dIThzsGw0RLZplnX9yXwfItcvaIzJc2VQVi8TGyGDlu92syMB5ulybfvGLHAI5Ghzlk23UBPF8xg==
+
+suspend-react@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/suspend-react/-/suspend-react-0.1.0.tgz#570595f315a68d50625387dcca8f502f32f499d8"
+  integrity sha512-J+dYBrK1myX+EpijscT4op5M4C7gMf+k1D38dLz4JivXzVX5T1HqRdAdrMalYVcnf4UWI6GfTMH1uoU3jGLu1g==
 
 tailwindcss@^3.3.2:
   version "3.3.2"
