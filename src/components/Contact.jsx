@@ -146,14 +146,14 @@ const Contact = () => {
               id="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="John Doe"
               title="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
 
             {/* Invalid Name */}
             <span className="text-red-400 mt-2 hidden" id="name-error">
-              Please enter a valid name!
+              Invalid Name!
             </span>
           </label>
 
@@ -166,14 +166,14 @@ const Contact = () => {
               id="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder="johndoe@email.com"
               title="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
 
             {/* Invalid Email */}
             <span className="text-red-400 mt-2 hidden" id="email-error">
-              Please enter a valid email!
+              Invalid E-mail!
             </span>
           </label>
 
@@ -187,14 +187,14 @@ const Contact = () => {
               id="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="Hello there!"
               title="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
 
             {/* Invalid Message */}
             <span className="text-red-400 mt-2 hidden" id="message-error">
-              Please enter a valid message!
+              Invalid Message!
             </span>
           </label>
 
