@@ -48,7 +48,7 @@ export const navLinks = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/Technical-Shubham-tech/3d-portfolio/",
+    link: "http://www.github.com/sanidhyy/3d-portfolio/",
   },
 ];
 
