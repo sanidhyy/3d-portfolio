@@ -7,7 +7,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/3d-portfolio/commits/main "Maintenance")
 [![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/branches "GitHub branches")
 [![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/3d-portfolio/main)](https://github.com/Technical-Shubham-tech/3d-portfolio/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5c77ba92-e2f5-468e-99f1-3543906a90cb/deploy-status)](https://shubam.netlify.app/ "Netlify Status")
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c77ba92-e2f5-468e-99f1-3543906a90cb/deploy-status)](https://65350cf7d9bdce5e198c93a0--shubam.netlify.app/ "Netlify Status")
 [![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/issues "GitHub issues")
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/pulls "GitHub pull requests")
 
