@@ -29,6 +29,9 @@ import {
   project4,
   project5,
   project6,
+  user1,
+  user2,
+  user3,
 } from "../assets";
 
 // Navbar Links
@@ -192,7 +195,7 @@ const testimonials = [
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: user1,
   },
   {
     testimonial:
@@ -200,7 +203,7 @@ const testimonials = [
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: user2,
   },
   {
     testimonial:
@@ -208,7 +211,7 @@ const testimonials = [
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: user3,
   },
 ];
 
