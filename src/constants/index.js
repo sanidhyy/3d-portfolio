@@ -233,7 +233,7 @@ const projects = [
       },
     ],
     image: project1,
-    source_code_link: "https://github.com/Technical-Shubham-tech/disney-clone",
+    source_code_link: "https://github.com/sanidhyy/disney-clone",
     live_site_link: "https://clonedisneyplus.web.app/",
   },
   {
@@ -255,7 +255,7 @@ const projects = [
       },
     ],
     image: project2,
-    source_code_link: "https://github.com/Technical-Shubham-tech/fitness-app",
+    source_code_link: "https://github.com/sanidhyy/fitness-app",
     live_site_link: "https://fitness-gym-react.netlify.app/",
   },
   {
@@ -277,8 +277,7 @@ const projects = [
       },
     ],
     image: project3,
-    source_code_link:
-      "https://github.com/Technical-Shubham-tech/admin-dashboard",
+    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
     live_site_link: "https://shoppy-dashboard-react.netlify.app/",
   },
   {
@@ -300,7 +299,7 @@ const projects = [
       },
     ],
     image: project4,
-    source_code_link: "https://github.com/Technical-Shubham-tech/tiktok-clone",
+    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
     live_site_link: "https://tiktok-clone-react.vercel.app/",
   },
   {
@@ -322,7 +321,7 @@ const projects = [
       },
     ],
     image: project5,
-    source_code_link: "https://github.com/Technical-Shubham-tech/crypto-app",
+    source_code_link: "https://github.com/sanidhyy/crypto-app",
     live_site_link: "https://reactjscryptoapp.netlify.app/",
   },
   {
@@ -344,8 +343,7 @@ const projects = [
       },
     ],
     image: project6,
-    source_code_link:
-      "https://github.com/Technical-Shubham-tech/travel-advisor",
+    source_code_link: "https://github.com/sanidhyy/travel-advisor",
     live_site_link: "https://travel-advisor-reactjs.netlify.app/",
   },
 ];
