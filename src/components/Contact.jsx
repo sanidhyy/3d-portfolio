@@ -92,7 +92,7 @@ const Contact = () => {
           to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_KEY,
+        import.meta.env.VITE_APP_EMAILJS_KEY
       )
       .then(
         () => {
@@ -117,7 +117,7 @@ const Contact = () => {
             email: "",
             message: "",
           });
-        },
+        }
       );
   };
 
@@ -148,7 +148,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="John Doe"
               title="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              disabled={loading}
+              aria-disabled={loading}
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
             />
 
             {/* Invalid Name */}
@@ -168,7 +170,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="johndoe@email.com"
               title="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              disabled={loading}
+              aria-disabled={loading}
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
             />
 
             {/* Invalid Email */}
@@ -189,7 +193,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Hello there!"
               title="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              disabled={loading}
+              aria-disabled={loading}
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60 disabled:resize-none"
             />
 
             {/* Invalid Message */}
@@ -202,8 +208,9 @@ const Contact = () => {
           <button
             type="submit"
             title={loading ? "Sending..." : "Send"}
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:bg-tertiary/20 disabled:text-white/60"
             disabled={loading}
+            aria-disabled={loading}
           >
             {/* check loader state */}
             {loading ? "Sending..." : "Send"}
