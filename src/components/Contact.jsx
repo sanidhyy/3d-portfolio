@@ -92,7 +92,7 @@ const Contact = () => {
           to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_KEY
+        import.meta.env.VITE_APP_EMAILJS_KEY,
       )
       .then(
         () => {
@@ -117,7 +117,7 @@ const Contact = () => {
             email: "",
             message: "",
           });
-        }
+        },
       );
   };
 
