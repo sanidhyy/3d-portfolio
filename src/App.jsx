@@ -11,11 +11,13 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import Banner from "./components/Banner";
 
 // App
 const App = () => {
   return (
     <BrowserRouter>
+      <Banner />
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
