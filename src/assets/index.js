@@ -38,9 +38,9 @@ import project4 from "./project4.png";
 import project5 from "./project5.png";
 import project6 from "./project6.png";
 
-import user1 from "./user1.jpg";
-import user2 from "./user2.jpg";
-import user3 from "./user3.jpg";
+import user1 from "./testimonials/user1.jpg";
+import user2 from "./testimonials/user2.jpg";
+import user3 from "./testimonials/user3.jpg";
 
 export {
   logo,
