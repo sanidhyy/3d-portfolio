@@ -10,6 +10,7 @@ import github from "./github.png";
 import preview from "./preview.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import bulb from "./bulb.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -47,6 +48,7 @@ export {
   preview,
   menu,
   close,
+  bulb,
   css,
   docker,
   figma,
