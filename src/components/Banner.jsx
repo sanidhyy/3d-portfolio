@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { close, bulb } from "../assets";
 
@@ -35,14 +36,14 @@ const Banner = () => {
           </span>
           <span>
             Did you like this portfolio. Check out my{" "}
-            <a
-              href="https://www.sanidhy.me/"
+            <Link
+              to="https://www.sanidhy.me/"
               target="_blank"
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
             >
               new portfolio
-            </a>
+            </Link>
             .
           </span>
         </p>
