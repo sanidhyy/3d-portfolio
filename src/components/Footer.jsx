@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { socials } from "../constants";
+import { cn } from "../utils/lib";
 
 // Footer
 const Footer = () => {
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-8 bg-primary border-t border-t-secondary/5`}
+      className={cn(
+        styles.paddingX,
+        "w-full flex items-center py-8 bg-primary border-t border-t-secondary/5"
+      )}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <p className="text-white text-md font-bold flex">

@@ -7,6 +7,7 @@ import { github, preview } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { cn } from "../utils/lib";
 
 // Project Card
 const ProjectCard = ({
@@ -75,7 +76,7 @@ const ProjectCard = ({
       {/* Work Tag */}
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag, tagIdx) => (
-          <p key={`Tag-${tagIdx}`} className={`text-[14px] ${tag.color}`}>
+          <p key={`Tag-${tagIdx}`} className={cn(tag.color, "text-[14px]")}>
             #{tag.name}
           </p>
         ))}

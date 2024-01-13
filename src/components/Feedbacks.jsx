@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { cn } from "../utils/lib";
 import { testimonials } from "../constants";
 
 // Feedback Card
@@ -53,7 +54,7 @@ const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
       <div
-        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
+        className={cn(styles.padding, "bg-tertiary rounded-2xl min-h-[300px]")}
       >
         {/* Title */}
         <motion.div variants={textVariant()}>
@@ -63,7 +64,7 @@ const Feedbacks = () => {
       </div>
 
       {/* Feedback Card */}
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}>
         {testimonials.map((testimonial, i) => (
           <FeedbackCard key={testimonial.name} index={i} {...testimonial} />
         ))}
