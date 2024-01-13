@@ -32,6 +32,10 @@ import {
   user1,
   user2,
   user3,
+  facebook,
+  instagram,
+  twitter,
+  github,
 } from "../assets";
 
 // Navbar Links
@@ -351,4 +355,27 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  {
+    name: "Facebook",
+    icon: facebook,
+    link: "https://facebook.com",
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    link: "https://instagram.com",
+  },
+  {
+    name: "Twitter",
+    icon: twitter,
+    link: "https://twitter.com",
+  },
+  {
+    name: "GitHub",
+    icon: github,
+    link: "https://github.com",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, socials };
