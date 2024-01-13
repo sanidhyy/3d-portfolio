@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <div
       id="sticky-banner"
-      tabindex="-1"
+      tabIndex={-1}
       className={`${
         hide ? "hidden" : "block"
       } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md opacity-[0.98]`}
