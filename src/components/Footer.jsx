@@ -20,7 +20,7 @@ const Footer = () => {
           {socials.map((social) => (
             <li
               key={social.name}
-              className="text-secondary font-poppins font-medium cursor-pointer text-[16px]"
+              className="text-secondary font-poppins font-medium cursor-pointer text-[16px] opacity-80 hover:opacity-100 transition"
             >
               <Link to={social.link} target="_blank" rel="noreferrer noopener">
                 <img src={social.icon} alt={social.name} className="h-6 w-6" />
