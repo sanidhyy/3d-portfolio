@@ -12,6 +12,7 @@ import {
   StarsCanvas,
 } from "./components";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 // App
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
