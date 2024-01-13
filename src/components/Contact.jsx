@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
@@ -94,31 +95,22 @@ const Contact = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_KEY
       )
-      .then(
-        () => {
-          // Success
-          setLoading(false);
-          alert("Thank You. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          // Error handle
-          setLoading(false);
-          console.log(error);
-          alert("Sorry. Something went wrong.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        }
-      );
+      .then(() =>
+        toast.success("Thank You. I will get back to you as soon as possible.")
+      )
+      .catch((error) => {
+        // Error handle
+        console.log("[CONTACT_ERR]: ", error);
+        toast.error("Sorry. Something went wrong.");
+      })
+      .finally(() => {
+        setLoading(false);
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      });
   };
 
   return (
