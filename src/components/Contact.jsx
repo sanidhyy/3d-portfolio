@@ -95,13 +95,11 @@ const Contact = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_KEY
       )
-      .then(() =>
-        toast.success("Thank You. I will get back to you as soon as possible.")
-      )
+      .then(() => toast.success("Thanks for contacting me."))
       .catch((error) => {
         // Error handle
         console.log("[CONTACT_ERR]: ", error);
-        toast.error("Sorry. Something went wrong.");
+        toast.error("Something went wrong.");
       })
       .finally(() => {
         setLoading(false);
