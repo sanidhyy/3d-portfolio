@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { close, bulb } from "../assets";
 
 const Banner = () => {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
+
+  useEffect(() => {
+    const bannerTimer = setTimeout(() => {
+      setHide(false);
+    }, 5000);
+
+    return () => clearTimeout(bannerTimer);
+  }, []);
 
   return (
     <div
@@ -11,7 +19,7 @@ const Banner = () => {
       tabindex="-1"
       className={`${
         hide ? "hidden" : "block"
-      } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md`}
+      } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md opacity-[0.98]`}
     >
       <div className="flex items-center mx-auto">
         <p className="flex items-center text-sm font-normal text-gray-500 ">
