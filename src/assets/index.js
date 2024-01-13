@@ -6,7 +6,6 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import preview from "./preview.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -42,13 +41,17 @@ import user1 from "./testimonials/user1.jpg";
 import user2 from "./testimonials/user2.jpg";
 import user3 from "./testimonials/user3.jpg";
 
+import github from "./github.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import twitter from "./twitter.svg";
+
 export {
   logo,
   backend,
   creator,
   mobile,
   web,
-  github,
   preview,
   menu,
   close,
@@ -79,4 +82,8 @@ export {
   user1,
   user2,
   user3,
+  github,
+  facebook,
+  instagram,
+  twitter,
 };
