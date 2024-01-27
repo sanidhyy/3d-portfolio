@@ -519,6 +519,13 @@
   resolved "https://registry.npmjs.org/@types/stats.js/-/stats.js-0.17.3.tgz"
   integrity sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==
 
+"@types/tailwindcss@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/@types/tailwindcss/-/tailwindcss-3.1.0.tgz"
+  integrity sha512-JxPzrm609hzvF4nmOI3StLjbBEP3WWQxDDJESqR1nh94h7gyyy3XSl0hn5RBMJ9mPudlLjtaXs5YEBtLw7CnPA==
+  dependencies:
+    tailwindcss "*"
+
 "@types/three@>=0.144.0":
   version "0.160.0"
   resolved "https://registry.npmjs.org/@types/three/-/three-0.160.0.tgz"
@@ -1607,7 +1614,7 @@ tailwind-merge@^2.2.1:
   dependencies:
     "@babel/runtime" "^7.23.7"
 
-tailwindcss@^3.3.3:
+tailwindcss@*, tailwindcss@^3.3.3:
   version "3.4.1"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.1.tgz"
   integrity sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==
