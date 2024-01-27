@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 import { close, bulb } from "../assets";
 
+type BannerProps = {
+  hide: boolean;
+  setHide: (hide: boolean) => void;
+};
+
 const BANNER_KEY = "hide-banner";
 
-const Banner = ({ hide, setHide }) => {
+const Banner = ({ hide, setHide }: BannerProps) => {
   useEffect(() => {
     const hideBanner = localStorage.getItem(BANNER_KEY);
 
@@ -20,7 +25,7 @@ const Banner = ({ hide, setHide }) => {
 
   const handleBannerClose = () => {
     setHide(true);
-    localStorage.setItem(BANNER_KEY, true);
+    localStorage.setItem(BANNER_KEY, "1");
   };
 
   return (
@@ -46,7 +51,7 @@ const Banner = ({ hide, setHide }) => {
           <span>
             Did you like this portfolio. Check out my{" "}
             <Link
-              to="https://www.sanidhy.me/"
+              to="https://www.sanidhy.me"
               target="_blank"
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"

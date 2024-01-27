@@ -2,7 +2,7 @@ import * as React from "react";
 import ReactDOM from "react-dom/client";
 import { Toaster } from "sonner";
 
-import App from "./App";
+import App from "./app";
 
 import "./index.css";
 

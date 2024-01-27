@@ -11,7 +11,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import Banner from "./components/Banner";
+import Banner from "./components/banner";
 import Footer from "./components/Footer";
 
 // App

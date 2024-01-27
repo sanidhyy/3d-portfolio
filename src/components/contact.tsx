@@ -1,16 +1,16 @@
-import React, { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { useState, useRef, type FormEvent, type ChangeEvent } from "react";
+import { toast } from "sonner";
 
-import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 
 // Contact
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,7 +19,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   // handle form change
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
@@ -30,11 +32,17 @@ const Contact = () => {
     // form fields
     const { name, email, message } = form;
 
+    type Current = {
+      name: boolean;
+      email: boolean;
+      message: boolean;
+    };
+
     // Error message
-    const nameError = document.querySelector("#name-error");
-    const emailError = document.querySelector("#email-error");
-    const messageError = document.querySelector("#message-error");
-    let current = { name: false, email: false, message: false };
+    const nameError = document.querySelector("#name-error")!;
+    const emailError = document.querySelector("#email-error")!;
+    const messageError = document.querySelector("#message-error")!;
+    const current: Current = { name: false, email: false, message: false };
 
     // validate name
     if (name.trim().length < 3) {
@@ -67,11 +75,13 @@ const Contact = () => {
     }
 
     // True if all fields are validated
-    return Object.keys(current).every((k) => current[k]);
+    return Object.keys(current).every(
+      (k) => current[k as keyof typeof current]
+    );
   };
 
   // handle form submit
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     // prevent default page reload
     e.preventDefault();
 
@@ -98,7 +108,7 @@ const Contact = () => {
       .then(() => toast.success("Thanks for contacting me."))
       .catch((error) => {
         // Error handle
-        console.log("[CONTACT_ERR]: ", error);
+        console.log("[CONTACT_ERROR]: ", error);
         toast.error("Something went wrong.");
       })
       .finally(() => {
@@ -176,7 +186,6 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message*</span>
             <textarea
               rows={7}
-              type="text"
               name="message"
               id="message"
               value={form.message}
