@@ -41,10 +41,10 @@ import user1 from "./testimonials/user1.jpg";
 import user2 from "./testimonials/user2.jpg";
 import user3 from "./testimonials/user3.jpg";
 
-import github from "./github.svg";
-import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
-import twitter from "./twitter.svg";
+import github from "./socials/github.svg";
+import youtube from "./socials/youtube.svg";
+import linkedin from "./socials/linkedin.svg";
+import twitter from "./socials/twitter.svg";
 
 export {
   logo,
@@ -83,7 +83,7 @@ export {
   user2,
   user3,
   github,
-  facebook,
-  instagram,
+  youtube,
+  linkedin,
   twitter,
 };

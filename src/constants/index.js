@@ -32,8 +32,8 @@ import {
   user1,
   user2,
   user3,
-  facebook,
-  instagram,
+  youtube,
+  linkedin,
   twitter,
   github,
 } from "../assets";
@@ -357,24 +357,24 @@ const projects = [
 
 const socials = [
   {
-    name: "Facebook",
-    icon: facebook,
-    link: "https://facebook.com",
+    name: "YouTube",
+    icon: youtube,
+    link: "https://www.youtube.tv/sanidhyy",
   },
   {
-    name: "Instagram",
-    icon: instagram,
-    link: "https://instagram.com",
+    name: "Linkedin",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/sanidhyy",
   },
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://twitter.com",
+    link: "https://twitter.com/TechnicalShubam",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com",
+    link: "https://github.com/sanidhyy",
   },
 ];
 
