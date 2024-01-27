@@ -42,6 +42,7 @@
   "devDependencies": {
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "@types/tailwindcss": "^3.1.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.31",
