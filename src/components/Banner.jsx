@@ -3,14 +3,25 @@ import { Link } from "react-router-dom";
 
 import { close, bulb } from "../assets";
 
+const BANNER_KEY = "hide-banner";
+
 const Banner = ({ hide, setHide }) => {
   useEffect(() => {
+    const hideBanner = localStorage.getItem(BANNER_KEY);
+
+    if (hideBanner) return;
+
     const bannerTimer = setTimeout(() => {
       setHide(false);
     }, 5000);
 
     return () => clearTimeout(bannerTimer);
   }, []);
+
+  const handleBannerClose = () => {
+    setHide(true);
+    localStorage.setItem(BANNER_KEY, true);
+  };
 
   return (
     <div
@@ -49,7 +60,7 @@ const Banner = ({ hide, setHide }) => {
       <div className="flex items-center">
         <button
           data-dismiss-target="#sticky-banner"
-          onClick={() => setHide(true)}
+          onClick={handleBannerClose}
           type="button"
           className="flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-800 rounded-lg text-sm p-1.5 "
         >

@@ -15,7 +15,6 @@ const Navbar = ({ hide }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY);
       if (window.scrollY > 10) {
         setIsAtBottom(true);
       } else {
