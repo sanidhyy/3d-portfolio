@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { close, bulb } from "../assets";
 
-const Banner = () => {
-  const [hide, setHide] = useState(true);
-
+const Banner = ({ hide, setHide }) => {
   useEffect(() => {
     const bannerTimer = setTimeout(() => {
       setHide(false);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
@@ -16,12 +16,14 @@ import Footer from "./components/Footer";
 
 // App
 const App = () => {
+  const [hide, setHide] = useState(true);
+
   return (
     <BrowserRouter>
-      <Banner />
+      <Banner hide={hide} setHide={setHide} />
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
+          <Navbar hide={hide} />
           <Hero />
         </div>
         <About />
