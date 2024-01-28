@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
-import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { navLinks } from "../constants";
+import { styles } from "../styles";
 import { cn } from "../utils/lib";
 
 type NavbarProps = {
@@ -11,7 +11,7 @@ type NavbarProps = {
 };
 
 // Navbar
-const Navbar = ({ hide }: NavbarProps) => {
+export const Navbar = ({ hide }: NavbarProps) => {
   // state variables
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -126,5 +126,3 @@ const Navbar = ({ hide }: NavbarProps) => {
     </nav>
   );
 };
-
-export default Navbar;

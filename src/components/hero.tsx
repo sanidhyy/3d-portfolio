@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { cn } from "../utils/lib";
 
 // Hero
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -56,5 +56,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;

@@ -65,25 +65,25 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => (
 );
 
 // Experience
-const Experience = () => {
+export const Experience = () => {
   return (
-    <>
-      {/* Title */}
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+    <SectionWrapper idName="work">
+      <>
+        {/* Title */}
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </motion.div>
 
-      {/* Experience Card */}
-      <div className="empty-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((experience, i) => (
-            <ExperienceCard key={i} experience={experience} />
-          ))}
-        </VerticalTimeline>
-      </div>
-    </>
+        {/* Experience Card */}
+        <div className="empty-20 flex flex-col">
+          <VerticalTimeline>
+            {experiences.map((experience, i) => (
+              <ExperienceCard key={i} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
+      </>
+    </SectionWrapper>
   );
 };
-
-export default SectionWrapper(Experience, "work");
