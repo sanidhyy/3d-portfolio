@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { services } from "../constants";
+import { SERVICES } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -63,7 +63,7 @@ export const About = () => {
 
         {/* Service Card */}
         <div className="mt-20 flex flex-wrap gap-10">
-          {services.map((service, i) => (
+          {SERVICES.map((service, i) => (
             <ServiceCard key={service.title} index={i} {...service} />
           ))}
         </div>

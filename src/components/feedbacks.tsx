@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { testimonials } from "../constants";
+import { TESTIMONIALS } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
@@ -65,7 +65,7 @@ export const Feedbacks = () => {
         <div
           className={cn(
             styles.padding,
-            "bg-tertiary rounded-2xl min-h-[300px]",
+            "bg-tertiary rounded-2xl min-h-[300px]"
           )}
         >
           {/* Title */}
@@ -79,7 +79,7 @@ export const Feedbacks = () => {
         <div
           className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}
         >
-          {testimonials.map((testimonial, i) => (
+          {TESTIMONIALS.map((testimonial, i) => (
             <FeedbackCard key={testimonial.name} index={i} {...testimonial} />
           ))}
         </div>

@@ -2,23 +2,14 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { github, preview } from "../assets";
-import { projects } from "../constants";
+import { PROJECTS } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
 import { fadeIn, textVariant } from "../utils/motion";
 
-type ProjectCardProps = {
+type ProjectCardProps = (typeof PROJECTS)[number] & {
   index: number;
-  name: string;
-  description: string;
-  tags: {
-    name: string;
-    color: string;
-  }[];
-  image: string;
-  source_code_link: string;
-  live_site_link: string;
 };
 
 // Project Card
@@ -124,7 +115,7 @@ export const Works = () => {
 
         {/* Project Card */}
         <div className="mt-20 flex flex-wrap gap-7">
-          {projects.map((project, i) => (
+          {PROJECTS.map((project, i) => (
             <ProjectCard key={`project-${i}`} index={i} {...project} />
           ))}
         </div>

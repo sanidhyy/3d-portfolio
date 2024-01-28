@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import { experiences } from "../constants";
+import { EXPERIENCES } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
@@ -12,14 +12,7 @@ import { textVariant } from "../utils/motion";
 import "react-vertical-timeline-component/style.min.css";
 
 type ExperienceCardProps = {
-  experience: {
-    title: string;
-    company_name: string;
-    icon: string;
-    iconBg: string;
-    date: string;
-    points: Array<string>;
-  };
+  experience: (typeof EXPERIENCES)[number];
 };
 
 // Experience Card
@@ -78,7 +71,7 @@ export const Experience = () => {
         {/* Experience Card */}
         <div className="empty-20 flex flex-col">
           <VerticalTimeline>
-            {experiences.map((experience, i) => (
+            {EXPERIENCES.map((experience, i) => (
               <ExperienceCard key={i} experience={experience} />
             ))}
           </VerticalTimeline>
