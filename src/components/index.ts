@@ -1,32 +1,32 @@
 // Contains components to be exported in other files
 // ! Don't remove anything from here
 
+import About from "./about";
 import {
-  EarthCanvas,
   BallCanvas,
   ComputersCanvas,
+  EarthCanvas,
   StarsCanvas,
 } from "./canvas";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import About from "./about";
-import Tech from "./Tech";
-import Experience from "./Experience";
-import Works from "./Works";
-import Feedbacks from "./Feedbacks";
 import Contact from "./contact";
+import Experience from "./experience";
+import Feedbacks from "./feedbacks";
+import Hero from "./hero";
+import Navbar from "./navbar";
+import Tech from "./tech";
+import Works from "./works";
 
 export {
-  Hero,
-  Navbar,
   About,
-  Tech,
-  Experience,
-  Works,
-  Feedbacks,
-  Contact,
-  EarthCanvas,
   BallCanvas,
   ComputersCanvas,
+  Contact,
+  EarthCanvas,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
   StarsCanvas,
+  Tech,
+  Works,
 };

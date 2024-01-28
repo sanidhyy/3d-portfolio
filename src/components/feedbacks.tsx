@@ -1,11 +1,19 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { cn } from "../utils/lib";
 import { testimonials } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { cn } from "../utils/lib";
+import { fadeIn, textVariant } from "../utils/motion";
+
+type FeedbackCardProps = {
+  index: number;
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
+};
 
 // Feedback Card
 const FeedbackCard = ({
@@ -15,7 +23,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-}) => (
+}: FeedbackCardProps) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"

@@ -9,6 +9,19 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { cn } from "../utils/lib";
 
+type ProjectCardProps = {
+  index: number;
+  name: string;
+  description: string;
+  tags: {
+    name: string;
+    color: string;
+  }[];
+  image: string;
+  source_code_link: string;
+  live_site_link: string;
+};
+
 // Project Card
 const ProjectCard = ({
   index,
@@ -18,7 +31,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_site_link,
-}) => (
+}: ProjectCardProps) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
     <Tilt
       options={{

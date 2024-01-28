@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
 import { socials } from "../constants";
+import { styles } from "../styles";
 import { cn } from "../utils/lib";
 
 // Footer

@@ -1,5 +1,3 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -7,13 +5,19 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../loader";
+
+type BallProps = {
+  imgUrl: string;
+};
 
 // Ball
-const Ball = (props) => {
+const Ball = ({ imgUrl }: BallProps) => {
   // use texture from drei
-  const [decal] = useTexture([props.imgUrl]);
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -32,7 +36,6 @@ const Ball = (props) => {
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
-          flatShading
           map={decal}
         />
       </mesh>
@@ -40,8 +43,12 @@ const Ball = (props) => {
   );
 };
 
+type BallCanvasProps = {
+  icon: string;
+};
+
 // Ball Canvas
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       {/* Show canvas loader on fallback */}

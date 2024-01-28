@@ -1,19 +1,29 @@
-import React from "react";
+import { motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+
+import { experiences } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
-import { experiences } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+type ExperienceCardProps = {
+  experience: {
+    title: string;
+    company_name: string;
+    icon: string;
+    iconBg: string;
+    date: string;
+    points: Array<string>;
+  };
+};
 
 // Experience Card
-const ExperienceCard = ({ experience }) => (
+const ExperienceCard = ({ experience }: ExperienceCardProps) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
