@@ -1,20 +1,23 @@
-import React, { useRef, Suspense, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { Canvas, type PointsProps, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
+import { useRef, Suspense, useState } from "react";
+import type { Points as PointsType } from "three";
 
 // Stars
-const Stars = (props) => {
-  const ref = useRef();
+const Stars = (props: PointsProps) => {
+  const ref = useRef<PointsType | null>(null);
   // For each star
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(6000), { radius: 1.2 })
+    random.inSphere(new Float32Array(6000), { radius: 1.2 }),
   );
 
   // Rotate multiple stars
   useFrame((_state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    if (ref.current) {
+      ref.current.rotation.x -= delta / 10;
+      ref.current.rotation.y -= delta / 15;
+    }
   });
 
   return (

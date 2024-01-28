@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
@@ -11,8 +11,8 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
+import Banner from "./components/banner";
+import Footer from "./components/footer";
 
 // App
 const App = () => {

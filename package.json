@@ -1,9 +1,12 @@
 {
   "name": "3d-portfolio",
+  "version": "1.1.0",
   "private": true,
-  "version": "0.0.0",
-  "license": "MIT",
-  "author": "Sanidhya Kr. Verma",
+  "author": {
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhya.verma12345@gmail.com",
+    "url": "https://github.com/sanidhyy"
+  },
   "description": "React JS Modern 3D Portfolio using Three.js",
   "keywords": [
     "reactjs",
@@ -17,11 +20,32 @@
     "css",
     "tailwindcss"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/3d-portfolio.git"
+  },
+  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
+    "email": "sanidhya.verma12345@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -41,11 +65,14 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.6",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "@types/tailwindcss": "^3.1.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
+    "typescript": "^5.3.3",
     "vite": "^5.0.12"
   }
 }

@@ -1,19 +1,22 @@
-import React from "react";
+import { motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+
+import { EXPERIENCES } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
-import { experiences } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+type ExperienceCardProps = {
+  experience: (typeof EXPERIENCES)[number];
+};
 
 // Experience Card
-const ExperienceCard = ({ experience }) => (
+const ExperienceCard = ({ experience }: ExperienceCardProps) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
@@ -55,25 +58,25 @@ const ExperienceCard = ({ experience }) => (
 );
 
 // Experience
-const Experience = () => {
+export const Experience = () => {
   return (
-    <>
-      {/* Title */}
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+    <SectionWrapper idName="work">
+      <>
+        {/* Title */}
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </motion.div>
 
-      {/* Experience Card */}
-      <div className="empty-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((experience, i) => (
-            <ExperienceCard key={i} experience={experience} />
-          ))}
-        </VerticalTimeline>
-      </div>
-    </>
+        {/* Experience Card */}
+        <div className="empty-20 flex flex-col">
+          <VerticalTimeline>
+            {EXPERIENCES.map((experience, i) => (
+              <ExperienceCard key={i} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
+      </>
+    </SectionWrapper>
   );
 };
-
-export default SectionWrapper(Experience, "work");

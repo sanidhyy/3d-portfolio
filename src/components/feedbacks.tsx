@@ -1,11 +1,19 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
+import { TESTIMONIALS } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../styles";
 import { cn } from "../utils/lib";
-import { testimonials } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+
+type FeedbackCardProps = {
+  index: number;
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
+};
 
 // Feedback Card
 const FeedbackCard = ({
@@ -15,7 +23,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-}) => (
+}: FeedbackCardProps) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
@@ -50,27 +58,32 @@ const FeedbackCard = ({
 );
 
 // Feedbacks
-const Feedbacks = () => {
+export const Feedbacks = () => {
   return (
-    <div className="mt-12 bg-black-100 rounded-[20px]">
-      <div
-        className={cn(styles.padding, "bg-tertiary rounded-2xl min-h-[300px]")}
-      >
-        {/* Title */}
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
-        </motion.div>
-      </div>
+    <SectionWrapper>
+      <div className="mt-12 bg-black-100 rounded-[20px]">
+        <div
+          className={cn(
+            styles.padding,
+            "bg-tertiary rounded-2xl min-h-[300px]"
+          )}
+        >
+          {/* Title */}
+          <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>What others say</p>
+            <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          </motion.div>
+        </div>
 
-      {/* Feedback Card */}
-      <div className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}>
-        {testimonials.map((testimonial, i) => (
-          <FeedbackCard key={testimonial.name} index={i} {...testimonial} />
-        ))}
+        {/* Feedback Card */}
+        <div
+          className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}
+        >
+          {TESTIMONIALS.map((testimonial, i) => (
+            <FeedbackCard key={testimonial.name} index={i} {...testimonial} />
+          ))}
+        </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
-
-export default SectionWrapper(Feedbacks, "");

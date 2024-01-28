@@ -1,13 +1,15 @@
-import React from "react";
+import * as React from "react";
 import ReactDOM from "react-dom/client";
 import { Toaster } from "sonner";
 
-import App from "./App";
+import App from "./app";
 
 import "./index.css";
 
+const rootEl = document.getElementById("root");
+
 // Render react app
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(rootEl!).render(
   <React.StrictMode>
     <Toaster
       theme="dark"
@@ -18,5 +20,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }}
     />
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

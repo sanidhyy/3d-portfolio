@@ -1,5 +1,5 @@
 // Text Variant motion
-export const textVariant = (delay) => {
+export const textVariant = (delay?: number) => {
   return {
     hidden: {
       y: -50,
@@ -18,7 +18,12 @@ export const textVariant = (delay) => {
 };
 
 // FadeIn motion
-export const fadeIn = (direction, type, delay, duration) => {
+export const fadeIn = (
+  direction: "left" | "right" | "up" | "down" | string,
+  type: string,
+  delay: number,
+  duration: number,
+) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -40,7 +45,7 @@ export const fadeIn = (direction, type, delay, duration) => {
 };
 
 // zoom in motion
-export const zoomIn = (delay, duration) => {
+export const zoomIn = (delay: number, duration: number) => {
   return {
     hidden: {
       scale: 0,
@@ -60,7 +65,12 @@ export const zoomIn = (delay, duration) => {
 };
 
 // slide in motion
-export const slideIn = (direction, type, delay, duration) => {
+export const slideIn = (
+  direction: "left" | "right" | "up" | "down" | string,
+  type: string,
+  delay: number,
+  duration: number,
+) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -80,7 +90,10 @@ export const slideIn = (direction, type, delay, duration) => {
 };
 
 // staggered container motion
-export const staggerContainer = (staggerChildren, delayChildren) => {
+export const staggerContainer = (
+  staggerChildren?: number,
+  delayChildren?: number,
+) => {
   return {
     hidden: {},
     show: {

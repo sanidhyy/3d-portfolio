@@ -39,28 +39,31 @@ import {
 } from "../assets";
 
 // Navbar Links
-export const navLinks = [
+export const NAV_LINKS = [
   {
     id: "about",
     title: "About",
+    link: null,
   },
   {
     id: "work",
     title: "Work",
+    link: null,
   },
   {
     id: "contact",
     title: "Contact",
+    link: null,
   },
   {
     id: "source-code",
     title: "Source Code",
     link: "http://www.github.com/sanidhyy/3d-portfolio/",
   },
-];
+] as const;
 
 // Services
-const services = [
+export const SERVICES = [
   {
     title: "Web Developer",
     icon: web,
@@ -77,10 +80,10 @@ const services = [
     title: "Content Creator",
     icon: creator,
   },
-];
+] as const;
 
 // Technologies
-const technologies = [
+export const TECHNOLOGIES = [
   {
     name: "HTML 5",
     icon: html,
@@ -133,10 +136,10 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-];
+] as const;
 
 // Experiences
-const experiences = [
+export const EXPERIENCES = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -189,10 +192,10 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-];
+] as const;
 
 // Testimonials
-const testimonials = [
+export const TESTIMONIALS = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -217,10 +220,10 @@ const testimonials = [
     company: "456 Enterprises",
     image: user3,
   },
-];
+] as const;
 
 // Projects
-const projects = [
+export const PROJECTS = [
   {
     name: "Disney+ Clone",
     description:
@@ -353,13 +356,13 @@ const projects = [
     source_code_link: "https://github.com/sanidhyy/travel-advisor",
     live_site_link: "https://travel-advisor-reactjs.netlify.app/",
   },
-];
+] as const;
 
-const socials = [
+export const SOCIALS = [
   {
     name: "YouTube",
     icon: youtube,
-    link: "https://www.youtube.tv/sanidhyy",
+    link: "https://www.youtube.com/@OPGAMER.",
   },
   {
     name: "Linkedin",
@@ -376,6 +379,4 @@ const socials = [
     icon: github,
     link: "https://github.com/sanidhyy",
   },
-];
-
-export { services, technologies, experiences, testimonials, projects, socials };
+] as const;
