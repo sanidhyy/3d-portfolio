@@ -1,9 +1,12 @@
 {
   "name": "3d-portfolio",
+  "version": "1.1.0",
   "private": true,
-  "version": "0.0.0",
-  "license": "MIT",
-  "author": "Sanidhya Kr. Verma",
+  "author": {
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhya.verma12345@gmail.com",
+    "url": "https://github.com/sanidhyy"
+  },
   "description": "React JS Modern 3D Portfolio using Three.js",
   "keywords": [
     "reactjs",
@@ -16,6 +19,26 @@
     "html",
     "css",
     "tailwindcss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/3d-portfolio.git"
+  },
+  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
+    "email": "sanidhya.verma12345@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
   ],
   "type": "module",
   "scripts": {
