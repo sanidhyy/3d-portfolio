@@ -132,13 +132,15 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 - Access the section for email templates or integration.
 - Locate the template you want to use and copy its Template ID.
 
-7. ### EmailJS Key (Replace VITE_APP_EMAILJS_KEY):
+7. ### EmailJS Public Key (Replace VITE_APP_EMAILJS_KEY):
 
 - Go to the EmailJS website.
 - Log in to your account or create one if you haven't.
 - Navigate to the dashboard or settings page.
 - Look for API keys or integration settings.
-- Copy the EmailJS Key associated with your account.
+- Copy the Public Key associated with your account.
+
+![Copy public key](/.github/images/step_emailjs.png "Copy public key")
 
 8. ### EmailJS Receiver (Replace VITE_APP_EMAILJS_RECIEVER):
 
