@@ -20,7 +20,7 @@ export const Contact = () => {
 
   // handle form change
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
 
@@ -76,7 +76,7 @@ export const Contact = () => {
 
     // True if all fields are validated
     return Object.keys(current).every(
-      (k) => current[k as keyof typeof current]
+      (k) => current[k as keyof typeof current],
     );
   };
 
@@ -103,7 +103,7 @@ export const Contact = () => {
           to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_KEY
+        import.meta.env.VITE_APP_EMAILJS_KEY,
       )
       .then(() => toast.success("Thanks for contacting me."))
       .catch((error) => {

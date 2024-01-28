@@ -11,7 +11,7 @@ export const Hero = () => {
       <div
         className={cn(
           styles.paddingX,
-          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5"
+          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
         )}
       >
         {/* Title */}

@@ -20,5 +20,5 @@ ReactDOM.createRoot(rootEl!).render(
       }}
     />
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

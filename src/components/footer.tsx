@@ -10,7 +10,7 @@ const Footer = () => {
     <nav
       className={cn(
         styles.paddingX,
-        "w-full flex items-center py-8 bg-primary border-t border-t-secondary/5"
+        "w-full flex items-center py-8 bg-primary border-t border-t-secondary/5",
       )}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">

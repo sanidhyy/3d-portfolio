@@ -9,7 +9,7 @@ const Stars = (props: PointsProps) => {
   const ref = useRef<PointsType | null>(null);
   // For each star
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(6000), { radius: 1.2 })
+    random.inSphere(new Float32Array(6000), { radius: 1.2 }),
   );
 
   // Rotate multiple stars

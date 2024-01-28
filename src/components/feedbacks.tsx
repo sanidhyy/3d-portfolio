@@ -65,7 +65,7 @@ export const Feedbacks = () => {
         <div
           className={cn(
             styles.padding,
-            "bg-tertiary rounded-2xl min-h-[300px]"
+            "bg-tertiary rounded-2xl min-h-[300px]",
           )}
         >
           {/* Title */}

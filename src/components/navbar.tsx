@@ -36,7 +36,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
       className={cn(
         styles.paddingX,
         "w-full flex items-center py-5 fixed top-0 z-20 bg-primary",
-        isAtBottom || hide ? "mt-0" : "mt-20"
+        isAtBottom || hide ? "mt-0" : "mt-20",
       )}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -62,7 +62,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
               key={link.id}
               className={cn(
                 active === link.title ? "text-white" : "text-secondary",
-                "hover:text-white text-[18px] font-medium cursor-pointer"
+                "hover:text-white text-[18px] font-medium cursor-pointer",
               )}
               onClick={() => !link?.link && setActive(link.title)}
             >
@@ -89,7 +89,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
           <div
             className={cn(
               !toggle ? "hidden" : "flex",
-              "p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
+              "p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl",
             )}
           >
             {/* Nav Links (Mobile) */}
@@ -99,7 +99,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                   key={link.id}
                   className={cn(
                     active === link.title ? "text-white" : "text-secondary",
-                    "font-poppins font-medium cursor-pointer text-[16px]"
+                    "font-poppins font-medium cursor-pointer text-[16px]",
                   )}
                   onClick={() => {
                     !link?.link && setToggle(!toggle);
