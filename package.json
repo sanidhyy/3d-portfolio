@@ -1,13 +1,13 @@
 {
   "name": "3d-portfolio",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "private": true,
   "author": {
     "name": "Sanidhya Kumar Verma",
     "email": "sanidhya.verma12345@gmail.com",
     "url": "https://github.com/sanidhyy"
   },
-  "description": "React JS Modern 3D Portfolio using Three.js",
+  "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
     "reactjs",
     "react",
