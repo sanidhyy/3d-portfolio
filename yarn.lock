@@ -501,10 +501,10 @@
     uuid "^9.0.1"
     zustand "^3.7.1"
 
-"@react-three/fiber@^8.13.4":
-  version "8.15.14"
-  resolved "https://registry.npmjs.org/@react-three/fiber/-/fiber-8.15.14.tgz"
-  integrity sha512-Mtc/qG0OMFvXFttzKmYdbKU2vjiTuyJMNfm4nmiKhwd7Hmql+gk9mwhtoofFLLyANrNW8UgTFmCTjf7Fz5h00Q==
+"@react-three/fiber@^8.15.15":
+  version "8.15.15"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.15.tgz#28ea2ee9fcd382e3720e0ca84fcbc270c13d2f48"
+  integrity sha512-Z5POnzgpYxrgnYuiCv+8t7lpynEcGcn0/323kV1NtE7Cwq16aMqEuC6nF2Y/tK+crJpKNEqsRtvng/eJy0xxOA==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
