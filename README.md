@@ -127,7 +127,7 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 
 6. ### Template ID (Replace VITE_APP_TEMPLATE_ID):
 
-- Go to the website where you use email templates.
+- Visit [EmailJS](emailjs.com) Website.
 - Log in to your account or sign up if necessary.
 - Access the section for email templates or integration.
 - Locate the template you want to use and copy its Template ID.
