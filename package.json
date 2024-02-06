@@ -48,7 +48,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^4.1.0",
     "@react-three/fiber": "^8.15.15",
     "@react-three/drei": "^9.96.5",
     "clsx": "^2.1.0",
