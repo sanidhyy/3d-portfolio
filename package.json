@@ -64,7 +64,7 @@
     "three": "^0.160.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.48",
+    "@types/react": "^18.2.54",
     "@types/react-dom": "^18.2.18",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/tailwindcss": "^3.1.0",
