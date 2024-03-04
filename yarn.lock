@@ -220,10 +220,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@emailjs/browser@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-4.1.0.tgz#141225969a2abfa1ec6e6f3240b3637a78cace16"
-  integrity sha512-AWLTmFli2NIKjBXs4Fql1B5z8i3W2r+CKCaxp0DdcFzcIQxrCS2TzmqJtIiPZKh9FpZgqueQTivBx6QOxaz89Q==
+"@emailjs/browser@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-4.2.0.tgz#f260365b31d084c9c14ae8ef0ca8fb1eb817421b"
+  integrity sha512-f1uOhThjn7tBX78rjpnkxEQhtEsMk05ZzU8LuqlJ41pT705fnJ77oMzKYXU3+X75EytlRKseHTLjtsy8oKTMEw==
 
 "@emotion/is-prop-valid@^0.8.2":
   version "0.8.8"
