@@ -61,7 +61,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "sonner": "^1.4.3",
     "tailwind-merge": "^2.2.1",
-    "three": "^0.161.0"
+    "three": "^0.162.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.62",
