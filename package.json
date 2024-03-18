@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.62",
-    "@types/react-dom": "^18.2.19",
+    "@types/react-dom": "^18.2.22",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/tailwindcss": "^3.1.0",
     "@vitejs/plugin-react": "^4.0.3",
