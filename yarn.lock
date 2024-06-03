@@ -543,10 +543,10 @@
     uuid "^9.0.1"
     zustand "^3.7.1"
 
-"@react-three/fiber@^8.16.6":
-  version "8.16.6"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.16.6.tgz#8ee71f6b10b3420c03f2ab3758909e6d98fd8f31"
-  integrity sha512-sKEqocYKRI3deW7z9CAVjedDID1an2i8FwxQVv2reMJxzIxIlyxCYXMIAqXBCgHTFtVX2hWGTZYhLL5nyne8kA==
+"@react-three/fiber@^8.16.7":
+  version "8.16.7"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.16.7.tgz#80e2c16b6cbaf8b7746925fd92284beea8798aab"
+  integrity sha512-D9z/HmTupS/Z3YqBK+rxPgm3Ou7VvOB8J57+AW7JG2FmhCY4u65Gd6r8i8y61BR/paCk0DCPyyJ5w7FiUEHXgA==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
