@@ -543,19 +543,20 @@
     uuid "^9.0.1"
     zustand "^3.7.1"
 
-"@react-three/fiber@^8.16.8":
-  version "8.16.8"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.16.8.tgz#4d2fecda7b38f534de6bdac49ca37c815cf9a4ef"
-  integrity sha512-Lc8fjATtvQEfSd8d5iKdbpHtRm/aPMeFj7jQvp6TNHfpo8IQTW3wwcE1ZMrGGoUH+w2mnyS+0MK1NLPLnuzGkQ==
+"@react-three/fiber@^8.17.5":
+  version "8.17.5"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.17.5.tgz#f3e712d7fac1345147b432b3c8b11194760af845"
+  integrity sha512-7uqtTWQrNIKW6wbgF0CQiDuo7uHoRd96lGBKsdRa+j/s268kqO4MBsxynLUpg6F/+mir5SEt9zJ3Up+lOjz/dg==
   dependencies:
     "@babel/runtime" "^7.17.8"
+    "@types/debounce" "^1.2.1"
     "@types/react-reconciler" "^0.26.7"
     "@types/webxr" "*"
     base64-js "^1.5.1"
     buffer "^6.0.3"
+    debounce "^1.2.1"
     its-fine "^1.0.6"
     react-reconciler "^0.27.0"
-    react-use-measure "^2.1.1"
     scheduler "^0.21.0"
     suspend-react "^0.1.3"
     zustand "^3.7.1"
@@ -662,6 +663,11 @@
   integrity sha512-WXCyOcRtH37HAUkpXhUduaxdm82b4GSlyTqajXviN4EfiuPgNYR109xMCKvpl6zPIpua0DGlMEDCq+g8EdoheQ==
   dependencies:
     "@babel/types" "^7.20.7"
+
+"@types/debounce@^1.2.1":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@types/debounce/-/debounce-1.2.4.tgz#cb7e85d9ad5ababfac2f27183e8ac8b576b2abb3"
+  integrity sha512-jBqiORIzKDOToaF63Fm//haOCHuwQuLa2202RK4MozpA6lh93eCBc+/8+wZn5OzjJt3ySdc+74SXWXB55Ewtyw==
 
 "@types/draco3d@^1.4.0":
   version "1.4.9"
@@ -1573,13 +1579,6 @@ react-tilt@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/react-tilt/-/react-tilt-1.0.2.tgz"
   integrity sha512-21tUUsmuw5id/6NDtKqwYTG4taVnw+BoUwIG6YsgPC9GI6cx4BnBuSqgriQYAYcv3bdGNzecaBL+rvQRAm28bg==
-
-react-use-measure@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/react-use-measure/-/react-use-measure-2.1.1.tgz"
-  integrity sha512-nocZhN26cproIiIduswYpV5y5lQpSQS1y/4KuvUCjSKmw7ZWIS/+g3aFnX3WdBkyuGUtTLif3UTqnLLhbDoQig==
-  dependencies:
-    debounce "^1.2.1"
 
 react-vertical-timeline-component@^3.6.0:
   version "3.6.0"
