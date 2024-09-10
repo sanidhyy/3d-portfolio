@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@react-three/fiber": "^8.17.6",
+    "@react-three/fiber": "^8.17.7",
     "@react-three/drei": "^9.111.5",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.31",
