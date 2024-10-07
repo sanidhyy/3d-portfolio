@@ -516,10 +516,10 @@
     uuid "^9.0.1"
     zustand "^3.7.1"
 
-"@react-three/fiber@^8.17.8":
-  version "8.17.8"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.17.8.tgz#fa09f7ab6757c4f3ee714d08200a9bf2dc657209"
-  integrity sha512-L2r8n4Ebg7YMTMaPHx1soxplgfia7SpAJUA1bS4C1ApRG9KKAjK8Kjhx3ODX3f6fyYfQZju2JyE8Q7OJHv1DNA==
+"@react-three/fiber@^8.17.9":
+  version "8.17.9"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.17.9.tgz#0d8e3b92b3ff4b715c4c3d5185fa5bde6d89480e"
+  integrity sha512-uZclikSqDdI15D0t8l8F8fyRyzl6BYwUOlEke2BIjAsjVzQy5MQPROVEc/9/Ef/PAezfl6lrLulMlYwgS1JGIg==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/debounce" "^1.2.1"
