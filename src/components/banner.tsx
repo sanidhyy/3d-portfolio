@@ -51,7 +51,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
           <span>
             Did you like this portfolio. Check out my{" "}
             <Link
-              to="https://www.sanidhy.me"
+              to="https://www.sanidhyy.name"
               target="_blank"
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
