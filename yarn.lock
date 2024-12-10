@@ -486,10 +486,10 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.7.5.tgz#e5dd180f3ed985b44fd2cd2f32aa9203752ef3e8"
   integrity sha512-HVj7LrZ4ReHWBimBvu2SKND3cDVUPWKLqRTmWe/fNY6o1owGOX0cAHbdPDTMelgBlVbrTKrre6lFkhqGZErK/g==
 
-"@react-three/drei@^9.117.3":
-  version "9.117.3"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.117.3.tgz#40faa223583f2d4536b5d66d518617136c52d62a"
-  integrity sha512-SnL8d17qO1cFXGVlDHhp+Oa9VZPwwOeibLHri5KNRARKOPv2+R71Sl84RTU9samBI2+1EaGJFciDvRgQnq+JOA==
+"@react-three/drei@^9.120.4":
+  version "9.120.4"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.120.4.tgz#90a8019d58b1068917bb6dc0234011ddf9e7f51c"
+  integrity sha512-keO7gHudafooXZxqukzPYIvhkBLL+PsnteuUPcHE3WZ5Hq1tC78AlY0kvm4NkC0w6tfsxpWl1yAYbUcnSPSmGg==
   dependencies:
     "@babel/runtime" "^7.26.0"
     "@mediapipe/tasks-vision" "0.10.17"
