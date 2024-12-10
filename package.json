@@ -59,7 +59,7 @@
     "react-router-dom": "^7.0.1",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "sonner": "^1.7.0",
+    "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "three": "^0.171.0"
   },
