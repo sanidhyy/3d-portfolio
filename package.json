@@ -50,7 +50,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-three/fiber": "^8.17.14",
-    "@react-three/drei": "^9.121.5",
+    "@react-three/drei": "^9.122.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.3",
     "maath": "^0.10.8",
