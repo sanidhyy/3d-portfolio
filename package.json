@@ -60,7 +60,7 @@
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sonner": "^2.0.3",
-    "tailwind-merge": "^3.2.0",
+    "tailwind-merge": "^3.3.0",
     "three": "^0.175.0"
   },
   "devDependencies": {
