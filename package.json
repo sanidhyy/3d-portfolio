@@ -55,7 +55,7 @@
     "framer-motion": "^12.23.22",
     "maath": "^0.10.8",
     "react": "^19.2.0",
-    "react-dom": "^19.1.1",
+    "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.3",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
@@ -66,7 +66,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.1",
-    "@types/react-dom": "^19.1.9",
+    "@types/react-dom": "^19.2.0",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/tailwindcss": "^3.1.0",
     "@vitejs/plugin-react": "^5.0.4",
