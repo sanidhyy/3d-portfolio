@@ -22,7 +22,7 @@
       },
       "devDependencies": {
         "@types/react": "^19.2.1",
-        "@types/react-dom": "^19.2.0",
+        "@types/react-dom": "^19.2.2",
         "@types/react-vertical-timeline-component": "^3.3.6",
         "@types/tailwindcss": "^3.1.0",
         "@vitejs/plugin-react": "^5.0.4",
@@ -221,7 +221,7 @@
 
     "@types/react": ["@types/react@19.2.1", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-1U5NQWh/GylZQ50ZMnnPjkYHEaGhg6t5i/KI0LDDh3t4E3h3T3vzm+GLY2BRzMfIjSBwzm6tginoZl5z0O/qsA=="],
 
-    "@types/react-dom": ["@types/react-dom@19.2.0", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-brtBs0MnE9SMx7px208g39lRmC5uHZs96caOJfTjFcYSLHNamvaSMfJNagChVNkup2SdtOxKX1FDBkRSJe1ZAg=="],
+    "@types/react-dom": ["@types/react-dom@19.2.2", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw=="],
 
     "@types/react-reconciler": ["@types/react-reconciler@0.32.0", "", { "peerDependencies": { "@types/react": "*" } }, "sha512-+WHarFkJevhH1s655qeeSEf/yxFST0dVRsmSqUgxG8mMOKqycgYBv2wVpyubBY7MX8KiX5FQ03rNIwrxfm7Bmw=="],
 
