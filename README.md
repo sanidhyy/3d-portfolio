@@ -2,14 +2,14 @@
 
 ![React JS Modern 3D Portfolio using Three.js](/.github/images/img_main.png "React JS Modern 3D Portfolio using Three.js")
 
-[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Technical-Shubham-tech "Ask Me Anything!")
-[![GitHub license](https://img.shields.io/github/license/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/blob/main/LICENSE.md "GitHub license")
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/3d-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/branches "GitHub branches")
-[![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/3d-portfolio/main)](https://github.com/Technical-Shubham-tech/3d-portfolio/commits "Github commits")
+[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/sanidhyy "Ask Me Anything!")
+[![GitHub license](https://img.shields.io/github/license/sanidhyy/3d-portfolio)](https://github.com/sanidhyy/3d-portfolio/blob/main/LICENSE.md "GitHub license")
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sanidhyy/3d-portfolio/commits/main "Maintenance")
+[![GitHub branches](https://badgen.net/github/branches/sanidhyy/3d-portfolio)](https://github.com/sanidhyy/3d-portfolio/branches "GitHub branches")
+[![Github commits](https://badgen.net/github/commits/sanidhyy/3d-portfolio/main)](https://github.com/sanidhyy/3d-portfolio/commits "Github commits")
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5c77ba92-e2f5-468e-99f1-3543906a90cb/deploy-status)](https://65350cf7d9bdce5e198c93a0--shubam.netlify.app/ "Netlify Status")
-[![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/3d-portfolio)](https://github.com/Technical-Shubham-tech/3d-portfolio/pulls "GitHub pull requests")
+[![GitHub issues](https://img.shields.io/github/issues/sanidhyy/3d-portfolio)](https://github.com/sanidhyy/3d-portfolio/issues "GitHub issues")
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sanidhyy/3d-portfolio)](https://github.com/sanidhyy/3d-portfolio/pulls "GitHub pull requests")
 
 ## ⚠️ Before you start
 
@@ -63,7 +63,7 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 
 [<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />](https://tailwindcss.com/ "Tailwind CSS")
 
-[<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with Love">](https://github.com/Technical-Shubham-tech/ "Built with Love")
+[<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with Love">](https://github.com/sanidhyy/ "Built with Love")
 
 ## :wrench: Stats
 
@@ -79,8 +79,8 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 ## :rocket: Follow Me
 
-[![GitHub followers](https://img.shields.io/github/followers/Technical-Shubham-tech?style=social&label=Follow&maxAge=2592000)](https://github.com/Technical-Shubham-tech "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FTechnical-Shubham-tech%2Fmedical-chat-app "Tweet")
+[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsanidhyyy)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fmedical-chat-app "Tweet")
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw "Subscribe my Channel")
 
 ## :star: Give A Star
