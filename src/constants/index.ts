@@ -58,7 +58,7 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    link: "http://www.github.com/sanidhyy/3d-portfolio",
   },
 ] as const;
 
@@ -244,7 +244,7 @@ export const PROJECTS = [
     ],
     image: project1,
     source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app/",
+    live_site_link: "https://clonedisneyplus.web.app",
   },
   {
     name: "Golds Gym",
@@ -266,7 +266,7 @@ export const PROJECTS = [
     ],
     image: project2,
     source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app/",
+    live_site_link: "https://fitness-gym-react.netlify.app",
   },
   {
     name: "Shoppy",
@@ -288,7 +288,7 @@ export const PROJECTS = [
     ],
     image: project3,
     source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
+    live_site_link: "https://shoppy-dashboard-react.netlify.app",
   },
   {
     name: "TikTok Clone",
@@ -310,7 +310,7 @@ export const PROJECTS = [
     ],
     image: project4,
     source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app/",
+    live_site_link: "https://tiktok-clone-react.vercel.app",
   },
   {
     name: "Cryptoverse",
@@ -332,7 +332,7 @@ export const PROJECTS = [
     ],
     image: project5,
     source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app/",
+    live_site_link: "https://reactjscryptoapp.netlify.app",
   },
   {
     name: "Travel Advisor",
@@ -354,7 +354,7 @@ export const PROJECTS = [
     ],
     image: project6,
     source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
+    live_site_link: "https://travel-advisor-reactjs.netlify.app",
   },
 ] as const;
 
@@ -372,7 +372,7 @@ export const SOCIALS = [
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://x.com/sanidhyyy",
   },
   {
     name: "GitHub",
