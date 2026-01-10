@@ -55,7 +55,7 @@ export const navLinks = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    link: "http://www.github.com/sanidhyy/3d-portfolio",
   },
 ];
 
@@ -241,7 +241,7 @@ const projects = [
     ],
     image: project1,
     source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app/",
+    live_site_link: "https://clonedisneyplus.web.app",
   },
   {
     name: "Golds Gym",
@@ -263,7 +263,7 @@ const projects = [
     ],
     image: project2,
     source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app/",
+    live_site_link: "https://fitness-gym-react.netlify.app",
   },
   {
     name: "Shoppy",
@@ -285,7 +285,7 @@ const projects = [
     ],
     image: project3,
     source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
+    live_site_link: "https://shoppy-dashboard-react.netlify.app",
   },
   {
     name: "TikTok Clone",
@@ -329,7 +329,7 @@ const projects = [
     ],
     image: project5,
     source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app/",
+    live_site_link: "https://reactjscryptoapp.netlify.app",
   },
   {
     name: "Travel Advisor",
@@ -351,7 +351,7 @@ const projects = [
     ],
     image: project6,
     source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
+    live_site_link: "https://travel-advisor-reactjs.netlify.app",
   },
 ];
 
@@ -369,7 +369,7 @@ const socials = [
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://x.com/sanidhyyy",
   },
   {
     name: "GitHub",
