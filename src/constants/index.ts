@@ -372,7 +372,7 @@ export const SOCIALS = [
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://x.com/sanidhyyy",
+    link: "https://x.com/_sanidhyy",
   },
   {
     name: "GitHub",
