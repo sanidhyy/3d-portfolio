@@ -43,6 +43,8 @@
 
 Here is the folder structure of this app.
 
+<!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 3d-portfolio/
   |- public/
@@ -98,6 +100,8 @@ Here is the folder structure of this app.
   |- tsconfig.json
   |- vite.config.ts
 ```
+
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -180,6 +184,8 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 Useful resources and dependencies that are used in 3D Portfolio.
 
+<!--- DEPENDENCIES_START --->
+
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^3.11.0
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.96.1
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.13.4
@@ -204,6 +210,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.3
 - [typescript](https://www.npmjs.com/package/typescript): ^5.3.3
 - [vite](https://www.npmjs.com/package/vite): ^5.0.12
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
