@@ -188,7 +188,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.6
 - [react](https://www.npmjs.com/package/react): ^19.2.4
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.13.0
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.13.1
 - [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
