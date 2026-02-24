@@ -192,7 +192,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.4.1
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.5.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.17
 - [three](https://www.npmjs.com/package/three): ^0.182.0
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
