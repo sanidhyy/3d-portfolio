@@ -185,7 +185,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.34.3
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
-- [postcss](https://www.npmjs.com/package/postcss): ^8.5.6
+- [postcss](https://www.npmjs.com/package/postcss): ^8.5.8
 - [react](https://www.npmjs.com/package/react): ^19.2.4
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.13.1
