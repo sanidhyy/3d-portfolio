@@ -196,7 +196,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.17
 - [three](https://www.npmjs.com/package/three): ^0.183.2
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
-- [typescript](https://www.npmjs.com/package/typescript): ^5.9.3
+- [typescript](https://www.npmjs.com/package/typescript): ^6.0.2
 - [vite](https://www.npmjs.com/package/vite): ^8.0.0
 
 <!--- DEPENDENCIES_END --->
