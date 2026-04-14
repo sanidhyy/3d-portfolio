@@ -181,7 +181,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): ^3.1.0
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.1
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.27
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.38.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
