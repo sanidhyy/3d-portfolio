@@ -194,7 +194,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.5.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.17
-- [three](https://www.npmjs.com/package/three): ^0.183.2
+- [three](https://www.npmjs.com/package/three): ^0.184.0
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.2
 - [vite](https://www.npmjs.com/package/vite): ^8.0.9
