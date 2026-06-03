@@ -176,7 +176,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.7
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.6.1
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.15
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.16
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): ^3.1.0
@@ -186,8 +186,8 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.40.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.15
-- [react](https://www.npmjs.com/package/react): ^19.2.6
-- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.6
+- [react](https://www.npmjs.com/package/react): ^19.2.7
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.7
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.16.0
 - [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
