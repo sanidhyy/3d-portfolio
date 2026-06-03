@@ -54,7 +54,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
     "maath": "^0.10.8",
-    "react": "^19.2.6",
+    "react": "^19.2.7",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.16.0",
     "react-tilt": "^1.0.2",
@@ -65,7 +65,7 @@
     "three-stdlib": "^2.36.1"
   },
   "devDependencies": {
-    "@types/react": "^19.2.15",
+    "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/tailwindcss": "^3.1.0",
