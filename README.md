@@ -183,7 +183,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.2
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.2
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.40.0
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.42.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.15
 - [react](https://www.npmjs.com/package/react): ^19.2.7
