@@ -175,7 +175,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 <!--- DEPENDENCIES_START --->
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.7
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.6.1
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.17
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
@@ -188,7 +188,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.23
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.1
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
 - [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
