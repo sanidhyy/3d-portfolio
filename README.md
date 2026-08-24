@@ -83,8 +83,6 @@ Here is the folder structure of this app.
   |- netlify.toml
   |- package.json
   |- pnpm-lock.yaml
-  |- postcss.config.cjs
-  |- tailwind.config.ts
   |- tsconfig.json
   |- tsconfig.tsbuildinfo
   |- vite.config.ts
@@ -184,16 +182,14 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
+- [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.4
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
-- [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): ^3.1.0
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.5
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.4
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.1.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
-- [postcss](https://www.npmjs.com/package/postcss): ^8.5.26
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.18.2
@@ -201,7 +197,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.8
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.17
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.185.1
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
 - [typescript](https://www.npmjs.com/package/typescript): ^7.0.2

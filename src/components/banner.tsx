@@ -67,7 +67,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
           data-dismiss-target="#sticky-banner"
           onClick={handleBannerClose}
           type="button"
-          className="flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-800 rounded-lg text-sm p-1.5 "
+          className="shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-800 rounded-lg text-sm p-1.5 "
         >
           <img src={close} alt="close" height={12} width={12} />
           <span className="sr-only">Close banner</span>
