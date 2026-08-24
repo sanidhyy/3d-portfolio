@@ -44,12 +44,10 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 3d-portfolio/
   |- netlify/
     |-- functions/
-      |--- contact.ts
   |- public/
   |- src/
     |-- assets/
@@ -93,7 +91,6 @@ Here is the folder structure of this app.
   |- tsconfig.json
   |- vite.config.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -181,7 +178,6 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in 3D Portfolio.
 
 <!--- DEPENDENCIES_START --->
-
 - [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.0.0
 - [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^2.12.9
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
