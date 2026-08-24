@@ -236,7 +236,7 @@
   }
 }
 
-/* Hide reCAPTCHA v2 badge */
+/* Hide reCAPTCHA v3 badge */
 .grecaptcha-badge {
   visibility: hidden;
 }
