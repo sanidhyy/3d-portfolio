@@ -44,7 +44,6 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 3d-portfolio/
   |- public/
@@ -80,17 +79,16 @@ Here is the folder structure of this app.
   |- .env.example
   |- .env/.env.local
   |- .gitignore
-  |- bun.lock
   |- index.html
   |- netlify.toml
   |- package.json
+  |- pnpm-lock.yaml
   |- postcss.config.cjs
   |- tailwind.config.ts
   |- tsconfig.json
   |- tsconfig.tsbuildinfo
   |- vite.config.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -183,7 +181,6 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in 3D Portfolio.
 
 <!--- DEPENDENCIES_START --->
-
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
