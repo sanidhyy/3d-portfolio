@@ -84,7 +84,6 @@ Here is the folder structure of this app.
   |- package.json
   |- pnpm-lock.yaml
   |- tsconfig.json
-  |- tsconfig.tsbuildinfo
   |- vite.config.ts
 ```
 <!--- FOLDER_STRUCTURE_END --->
