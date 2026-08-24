@@ -106,8 +106,6 @@ Here is the folder structure of this app.
 4. Contents of `.env`:
 
 ```env
-# .env
-
 # resend
 RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 RESEND_FROM_EMAIL="Your Name <me@example.com>"
