@@ -235,3 +235,8 @@
       -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+/* Hide reCAPTCHA v3 badge */
+.grecaptcha-badge {
+  visibility: hidden;
+}

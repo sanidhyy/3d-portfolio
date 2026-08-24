@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["react", "vite/client"],
+    "types": ["react", "vite/client", "node"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
