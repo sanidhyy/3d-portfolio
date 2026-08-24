@@ -44,6 +44,7 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 3d-portfolio/
   |- public/
@@ -89,6 +90,7 @@ Here is the folder structure of this app.
   |- tsconfig.tsbuildinfo
   |- vite.config.ts
 ```
+
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -140,9 +142,9 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 - If needed, create an email address or use an existing one.
 - Ensure that the chosen email address is accessible and ready to receive emails.
 
-9. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+9. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps`.
 
-10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `pnpm dev`.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
@@ -181,6 +183,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in 3D Portfolio.
 
 <!--- DEPENDENCIES_START --->
+
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
@@ -244,7 +247,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn run build` fails to minify
+### `pnpm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
