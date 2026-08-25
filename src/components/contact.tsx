@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useRef, type FormEvent, type ChangeEvent } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
@@ -13,14 +13,26 @@ import {
   isValidContactEmail,
   isValidContactMessage,
   isValidContactName,
+  type ContactFormFields,
 } from "../lib/contact";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 
+const FIELD_VALIDATORS: Record<
+  keyof ContactFormFields,
+  (value: string) => boolean
+> = {
+  name: isValidContactName,
+  email: isValidContactEmail,
+  message: isValidContactMessage,
+};
+
 const ContactForm = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const formRef = useRef<HTMLFormElement | null>(null);
-  const [form, setForm] = useState({
+  const messageRef = useRef<HTMLTextAreaElement | null>(null);
+  const hasAttemptedSubmit = useRef(false);
+  const [form, setForm] = useState<ContactFormFields>({
     name: "",
     email: "",
     message: "",
@@ -32,15 +44,44 @@ const ContactForm = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
+  useLayoutEffect(() => {
+    const el = messageRef.current;
+    if (!el) return;
 
-    setForm({ ...form, [name]: value });
+    el.style.overflowY = "hidden";
+    el.style.height = "auto";
+
+    const nextHeight = el.scrollHeight;
+    const maxHeight = Number.parseFloat(getComputedStyle(el).maxHeight);
+
+    if (Number.isFinite(maxHeight) && nextHeight >= maxHeight) {
+      el.style.height = `${maxHeight}px`;
+      el.style.overflowY = "auto";
+      return;
+    }
+
+    el.style.height = `${nextHeight}px`;
+  }, [form.message]);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const field = e.target.name as keyof ContactFormFields;
+    const value = e.target.value;
+
+    setForm((prev) => ({ ...prev, [field]: value }));
+
+    if (!hasAttemptedSubmit.current) return;
+
+    const isInvalid = !FIELD_VALIDATORS[field](value);
+    setFieldErrors((prev) =>
+      prev[field] === isInvalid ? prev : { ...prev, [field]: isInvalid },
+    );
   };
 
   const validateForm = () => {
+    hasAttemptedSubmit.current = true;
+
     const nextErrors = {
       name: !isValidContactName(form.name),
       email: !isValidContactEmail(form.email),
@@ -52,7 +93,7 @@ const ContactForm = () => {
     return !nextErrors.name && !nextErrors.email && !nextErrors.message;
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!validateForm()) return;
@@ -165,6 +206,7 @@ const ContactForm = () => {
       <label htmlFor="message" className="flex flex-col">
         <span className="text-white font-medium mb-4">Your Message*</span>
         <textarea
+          ref={messageRef}
           rows={7}
           name="message"
           id="message"
@@ -175,7 +217,7 @@ const ContactForm = () => {
           maxLength={500}
           disabled={loading}
           aria-disabled={loading}
-          className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-hidden border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60 disabled:resize-none"
+          className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-hidden border-none font-medium resize-none overflow-hidden max-h-96 disabled:bg-tertiary/20 disabled:text-white/60"
         />
 
         <span
@@ -225,7 +267,7 @@ export const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          className="xl:flex-1 xl:h-auto md:h-137.5 h-87.5"
         >
           <EarthCanvas />
         </motion.div>
