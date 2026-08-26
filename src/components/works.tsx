@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import { github, preview } from "../assets";
 import { PROJECTS } from "../constants";
@@ -10,7 +11,10 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 type ProjectCardProps = (typeof PROJECTS)[number] & {
   index: number;
+  enableTilt: boolean;
 };
+
+const cardClassName = "bg-tertiary p-5 rounded-2xl sm:w-90 w-full";
 
 // Project Card
 const ProjectCard = ({
@@ -21,16 +25,10 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_site_link,
-}: ProjectCardProps) => (
-  <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-90 w-full"
-    >
+  enableTilt,
+}: ProjectCardProps) => {
+  const content = (
+    <>
       <div className="relative w-full h-57.5">
         {/* Work image */}
         <img
@@ -84,12 +82,44 @@ const ProjectCard = ({
           </p>
         ))}
       </div>
-    </Tilt>
-  </motion.div>
-);
+    </>
+  );
+
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      {enableTilt ? (
+        <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+            gyroscope: false,
+          }}
+          className={cardClassName}
+        >
+          {content}
+        </Tilt>
+      ) : (
+        <div className={cardClassName}>{content}</div>
+      )}
+    </motion.div>
+  );
+};
 
 // Works
 export const Works = () => {
+  const [enableTilt, setEnableTilt] = useState(
+    () => window.matchMedia("(min-width: 768px)").matches,
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const update = () => setEnableTilt(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", update);
+    return () => mediaQuery.removeEventListener("change", update);
+  }, []);
+
   return (
     <SectionWrapper>
       <>
@@ -116,7 +146,12 @@ export const Works = () => {
         {/* Project Card */}
         <div className="mt-20 flex flex-wrap gap-7">
           {PROJECTS.map((project, i) => (
-            <ProjectCard key={`project-${i}`} index={i} {...project} />
+            <ProjectCard
+              key={`project-${i}`}
+              index={i}
+              enableTilt={enableTilt}
+              {...project}
+            />
           ))}
         </div>
       </>
