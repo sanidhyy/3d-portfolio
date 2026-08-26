@@ -237,6 +237,9 @@ const ContactForm = () => {
       >
         {loading ? "Sending..." : "Send"}
       </button>
+      <p className="mt-3 text-xs text-secondary/70">
+        This site is protected by reCAPTCHA.
+      </p>
     </form>
   );
 };
