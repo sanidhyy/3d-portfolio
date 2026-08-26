@@ -70,6 +70,9 @@ Here is the folder structure of this app.
     |-- hoc/
       |--- index.ts
       |--- section-wrapper.tsx
+    |-- hooks/
+      |--- use-in-view.ts
+      |--- use-limited-webgl.ts
     |-- lib/
       |--- contact.ts
     |-- utils/
