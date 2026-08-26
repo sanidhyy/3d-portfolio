@@ -7,11 +7,11 @@ import { cn } from "../utils/lib";
 // Hero
 export const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto touch-pan-y">
       <div
         className={cn(
           styles.paddingX,
-          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
+          "absolute inset-0 top-30 max-w-7xl mx-auto flex flex-row items-start gap-5 z-10 pointer-events-auto md:pointer-events-none",
         )}
       >
         {/* Title */}
@@ -21,7 +21,7 @@ export const Hero = () => {
         </div>
 
         {/* About Me */}
-        <div>
+        <div className="pointer-events-auto">
           <h1 className={cn(styles.heroHeadText, "text-white")}>
             Hi, I'm <span className="text-[#915eff]">Shubham</span>
           </h1>
@@ -36,9 +36,9 @@ export const Hero = () => {
       <ComputersCanvas />
 
       {/* Scroll to about section */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-8.75 h-16 rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],

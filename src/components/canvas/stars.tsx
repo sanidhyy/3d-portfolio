@@ -1,18 +1,16 @@
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import { Canvas, type PointsProps, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
-import { useRef, Suspense, useState } from "react";
-import type { Points as PointsType } from "three";
+import { Suspense, useRef, useState, type ComponentRef } from "react";
 
-// Stars
-const Stars = (props: PointsProps) => {
-  const ref = useRef<PointsType | null>(null);
-  // For each star
+import { useInView } from "../../hooks/use-in-view";
+
+const Stars = () => {
+  const ref = useRef<ComponentRef<typeof Points>>(null);
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(6000), { radius: 1.2 }),
   );
 
-  // Rotate multiple stars
   useFrame((_state, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 10;
@@ -22,20 +20,17 @@ const Stars = (props: PointsProps) => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      {/* Points */}
       <Points
         ref={ref}
         positions={new Float32Array(sphere)}
         stride={3}
         frustumCulled
-        {...props}
       >
-        {/* Each point material */}
         <PointMaterial
           transparent
           color="#f272c8"
           size={0.002}
-          sizeAttentuation
+          sizeAttenuation
           depthWrite={false}
         />
       </Points>
@@ -43,20 +38,20 @@ const Stars = (props: PointsProps) => {
   );
 };
 
-// Stars Canvas
 const StarsCanvas = () => {
-  return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
-      {/* Canvas */}
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        {/* Show stars if not fallback */}
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
+  const { ref, isInView } = useInView();
 
-        {/* preload all */}
-        <Preload all />
-      </Canvas>
+  return (
+    <div ref={ref} className="w-full h-auto absolute inset-0 z-[-1]">
+      {isInView && (
+        <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 1.5]}>
+          <Suspense fallback={null}>
+            <Stars />
+          </Suspense>
+
+          <Preload all />
+        </Canvas>
+      )}
     </div>
   );
 };

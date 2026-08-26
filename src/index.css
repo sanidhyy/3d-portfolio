@@ -132,6 +132,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+canvas {
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .hero-computer-canvas,
+  .hero-computer-canvas canvas {
+    pointer-events: none !important;
+    touch-action: pan-y !important;
+  }
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
