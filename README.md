@@ -188,7 +188,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.3.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.4
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.5
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.5
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
