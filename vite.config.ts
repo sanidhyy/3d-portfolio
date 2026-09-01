@@ -13,6 +13,10 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    plugins: [tailwindcss(), react(), netlify()],
+    plugins: [
+      tailwindcss(),
+      react(),
+      netlify({ edgeFunctions: { enabled: false } }),
+    ],
   };
 });
