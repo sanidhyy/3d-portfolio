@@ -54,7 +54,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
               to="https://www.sanidhyy.name"
               target="_blank"
               rel="noreferrer noopener"
-              className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
+              className="inline font-medium text-blue-600 underline-offset-2 decoration-600 hover:opacity-75"
             >
               new portfolio
             </Link>
