@@ -192,7 +192,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.1.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.1.0
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.2.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
 - [react](https://www.npmjs.com/package/react): ^19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.8
