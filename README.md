@@ -202,7 +202,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [resend](https://www.npmjs.com/package/resend): ^6.28.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.8
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.7.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
 - [three](https://www.npmjs.com/package/three): ^0.186.0
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
