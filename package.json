@@ -23,7 +23,7 @@
     "react-vertical-timeline-component": "^4.0.0",
     "resend": "^6.28.0",
     "sonner": "^2.0.8",
-    "tailwind-merge": "^3.6.0",
+    "tailwind-merge": "^3.7.0",
     "three": "^0.186.0",
     "three-stdlib": "^2.36.1"
   },
