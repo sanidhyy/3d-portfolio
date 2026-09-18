@@ -207,7 +207,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [three](https://www.npmjs.com/package/three): ^0.186.0
 - [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
 - [typescript](https://www.npmjs.com/package/typescript): ^7.0.2
-- [vite](https://www.npmjs.com/package/vite): ^8.2.1
+- [vite](https://www.npmjs.com/package/vite): ^8.3.0
 
 <!--- DEPENDENCIES_END --->
 
