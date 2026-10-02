@@ -184,7 +184,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [@netlify/functions](https://www.npmjs.com/package/@netlify/functions): ^6.0.0
 - [@netlify/vite-plugin](https://www.npmjs.com/package/@netlify/vite-plugin): ^3.0.1
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.8
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.7.0
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.8.1
 - [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.3
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.18
