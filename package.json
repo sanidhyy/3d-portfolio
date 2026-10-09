@@ -28,7 +28,7 @@
     "three-stdlib": "^2.36.1"
   },
   "devDependencies": {
-    "@netlify/functions": "^6.0.0",
+    "@netlify/functions": "^6.0.2",
     "@netlify/vite-plugin": "^3.0.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.3",
