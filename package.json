@@ -30,7 +30,7 @@
   "devDependencies": {
     "@netlify/functions": "^6.0.3",
     "@netlify/vite-plugin": "^3.0.1",
-    "@tailwindcss/vite": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.4",
     "@types/node": "^26.6.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
